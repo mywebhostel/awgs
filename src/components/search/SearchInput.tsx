@@ -43,7 +43,7 @@ export function SearchInput({ compact = false, limit }: SearchInputProps) {
           value={query}
           onChange={(event) => setQuery(event.target.value)}
           className="h-12 w-full rounded-lg border border-slate-300 bg-white pl-12 pr-4 text-base text-ink shadow-sm placeholder:text-slate-400 focus:border-standard-blue"
-          placeholder="Search principles, domains, levels, glossary..."
+          placeholder="Search vision, standards, domains, levels, glossary..."
           type="search"
         />
       </label>

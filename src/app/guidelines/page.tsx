@@ -12,7 +12,7 @@ export default function GuidelinesPage() {
       <SectionHeader
         eyebrow="Guidelines"
         title="Implementation Guidance"
-        description="AWGS guidance is organized around principles, governance domains, conformance claims, and assessment evidence."
+        description="Guidance connects the Agentic Accessibility vision to AWGS 1.0 principles, governance domains, conformance claims, and assessment evidence."
       />
 
       <section className="grid gap-4 md:grid-cols-3">
@@ -45,7 +45,7 @@ export default function GuidelinesPage() {
             <Badge tone="teal">Principles</Badge>
             <h2 className="mt-4 text-3xl font-semibold tracking-normal text-ink">Design commitments</h2>
           </div>
-          <Link href="/standard/principles" className="inline-flex items-center gap-2 text-sm font-semibold text-standard-blue">
+          <Link href="/standards/awgs/principles" className="inline-flex items-center gap-2 text-sm font-semibold text-standard-blue">
             View principles
             <ArrowRight className="h-4 w-4" aria-hidden="true" />
           </Link>
@@ -59,7 +59,7 @@ export default function GuidelinesPage() {
             <Badge tone="blue">Domains</Badge>
             <h2 className="mt-4 text-3xl font-semibold tracking-normal text-ink">Control areas</h2>
           </div>
-          <Link href="/standard/governance-domains" className="inline-flex items-center gap-2 text-sm font-semibold text-standard-blue">
+          <Link href="/standards/awgs/domains" className="inline-flex items-center gap-2 text-sm font-semibold text-standard-blue">
             View domains
             <ArrowRight className="h-4 w-4" aria-hidden="true" />
           </Link>

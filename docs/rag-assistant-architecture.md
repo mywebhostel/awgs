@@ -4,7 +4,7 @@ Status: Placeholder architecture for future implementation
 
 ## Current State
 
-The AWGS assistant is currently a mock interface. It is designed to show the intended user experience without claiming real retrieval or vector search.
+The initiative assistant is currently a mock interface. It is designed to show the intended user experience without claiming real retrieval or vector search.
 
 Current files:
 
@@ -13,7 +13,7 @@ Current files:
 - Mock answer logic: `src/lib/awgs.ts` `answerFromAwgs`
 - Assistant page: `src/app/assistant/page.tsx`
 
-The API route returns deterministic answers based on simple question matching. It also returns a source object pointing to `/standard/full`.
+The API route returns deterministic answers based on simple question matching. It also returns source objects pointing to `/vision/agentic-accessibility` and `/standards/awgs/full`.
 
 GitHub Pages does not run Next.js API routes. On static hosting, the chat component falls back to the same mock answer logic in the browser if `/api/chat` is unavailable.
 
@@ -27,10 +27,11 @@ GitHub Pages does not run Next.js API routes. On static hosting, the chat compon
 
 ## Target Architecture
 
-Future retrieval-augmented generation should use the AWGS content corpus as its source of truth.
+Future retrieval-augmented generation should use the Agentic Accessibility and AWGS content corpus as its source of truth.
 
 Recommended corpus:
 
+- `docs/agentic-accessibility-vision.md`
 - `content/standard/awgs-1-0-foundation.mdx`
 - Future `content/knowledge-base/*.mdx` articles
 - Future versioned standard files
@@ -69,7 +70,7 @@ The current mock response shape can be extended rather than replaced:
   "sources": [
     {
       "title": "AWGS 1.0 Foundation Specification",
-      "href": "/standard/full",
+      "href": "/standards/awgs/full",
       "sourceId": "awgs:1.0:section-6"
     }
   ],

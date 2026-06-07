@@ -5,11 +5,11 @@ import { TopNav } from "@/components/layout/TopNav";
 
 export const metadata: Metadata = {
   title: {
-    default: "Agentic Web Governance Standard",
-    template: "%s | AWGS"
+    default: "Agentic Accessibility Initiative",
+    template: "%s | Agentic Accessibility"
   },
   description:
-    "A vendor-neutral public draft standard for safe, transparent, interoperable, accountable, and trustworthy agentic web interactions."
+    "A vendor-neutral public initiative for trustworthy interaction between autonomous agents and digital services, with AWGS as the first standard."
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

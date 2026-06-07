@@ -7,8 +7,8 @@ export default function SearchPage() {
       <div className="space-y-8">
         <SectionHeader
           eyebrow="Search"
-          title="Search AWGS"
-          description="Find standard sections, principles, governance domains, compliance levels, conformance guidance, glossary terms, and future knowledge base material."
+          title="Search the Initiative"
+          description="Find Agentic Accessibility vision material, AWGS sections, governance domains, compliance levels, glossary terms, future work, and knowledge base material."
         />
         <SearchInput />
       </div>

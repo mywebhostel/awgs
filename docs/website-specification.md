@@ -1,6 +1,10 @@
 # AWGS Website Specification
 
-Status: Maintainer documentation
+Status: Historical maintainer documentation
+
+The canonical website architecture specification is now `docs/website-spec.md`.
+
+This file is retained as the earlier AWGS-only website specification created before the site was expanded into the public home for the broader Agentic Accessibility Initiative.
 
 ## Purpose
 

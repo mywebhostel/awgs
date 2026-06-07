@@ -1,6 +1,6 @@
-# Agentic Web Governance Standard Documentation Site
+# Agentic Accessibility Initiative Website
 
-Modern documentation website for the Agentic Web Governance Standard (AWGS) 1.0 Foundation Specification.
+Modern documentation website for the Agentic Accessibility Initiative, with the Agentic Web Governance Standard (AWGS) 1.0 as the first standard.
 
 ## Stack
 
@@ -25,9 +25,13 @@ src/
     api/chat/
     assistant/
     guidelines/
+    glossary/
     knowledge-base/
+    research/
     search/
     standard/
+    standards/
+    vision/
   components/
     chat/
     content/
@@ -86,7 +90,7 @@ GitHub Pages does not run Next.js API routes. The `/api/chat` route remains avai
 
 ## Content
 
-The full AWGS source document is stored at `content/standard/awgs-1-0-foundation.mdx` and rendered on `/standard/full`.
+The full AWGS source document is stored at `content/standard/awgs-1-0-foundation.mdx` and rendered on `/standards/awgs/full`.
 
 Structured section pages use the same specification vocabulary through `src/lib/awgs.ts`, which keeps principles, domains, compliance levels, glossary terms, roadmap items, knowledge base placeholders, and the local search index in one place.
 
@@ -95,10 +99,15 @@ Structured section pages use the same specification vocabulary through `src/lib/
 Repository-level documentation lives in `docs/`:
 
 - `docs/AWGS_Repository_Audit.md` - repository audit, source-of-truth map, gaps, and improvement roadmap.
-- `docs/website-specification.md` - website information architecture, content hierarchy, knowledge base structure, search expectations, accessibility notes, and deployment constraints.
+- `docs/agentic-accessibility-vision.md` - canonical Agentic Accessibility vision.
+- `docs/awgs-standard.md` - AWGS source-of-truth and route guide.
+- `docs/awgs-decisions.md` - initiative and AWGS decision record.
+- `docs/website-spec.md` - canonical website information architecture, content hierarchy, knowledge base structure, search expectations, accessibility notes, and deployment constraints.
+- `docs/website-specification.md` - historical AWGS-only website specification retained for context.
 - `docs/project-context.md` - maintainer and future-agent instructions for preserving vendor neutrality and the canonical content hierarchy.
 - `docs/rag-assistant-architecture.md` - current mock assistant behavior and future retrieval architecture.
 - `docs/decision-log.md` - observed and intentional project decisions.
+- `AGENTS.md` - instructions for future coding agents.
 
 Public publication records live in `content/public/` and are rendered on the site:
 

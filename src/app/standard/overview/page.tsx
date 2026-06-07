@@ -8,7 +8,7 @@ export default function OverviewPage() {
       <SectionHeader
         eyebrow="Foundation"
         title="Overview"
-        description="AWGS 1.0 is a public draft standard for enabling safe, transparent, interoperable, accountable, and trustworthy interactions between autonomous agents and digital services."
+        description="AWGS 1.0 is the first public draft standard under the Agentic Accessibility vision. It enables safe, transparent, interoperable, accountable, and trustworthy interactions between autonomous agents and digital services."
       />
 
       <section className="grid gap-4 md:grid-cols-2">

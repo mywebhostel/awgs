@@ -15,7 +15,7 @@ export function ChatPanel() {
     {
       role: "assistant",
       content:
-        "Ask a question about AWGS principles, compliance levels, governance domains, conformance, or assessment. This placeholder returns mock answers from the AWGS foundation content."
+        "Ask a question about Agentic Accessibility, AWGS, governance domains, compliance levels, glossary terms, or future work. This placeholder returns mock answers from the current public content."
     }
   ]);
   const [question, setQuestion] = useState("");
@@ -67,13 +67,13 @@ export function ChatPanel() {
           <div>
             <Badge tone="teal">Mock RAG</Badge>
             <h2 id="rag-assistant-title" className="mt-3 text-2xl font-semibold tracking-normal text-ink">
-              AWGS assistant
+          Initiative assistant
             </h2>
           </div>
           <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-600">Placeholder API</span>
         </div>
         <p className="mt-3 text-sm leading-6 text-slate-600">
-          This UI is prepared for retrieval-augmented answers. The current API route returns deterministic mock responses.
+          This UI is prepared for retrieval-augmented answers over Agentic Accessibility and AWGS content. The current API route returns deterministic mock responses.
         </p>
       </div>
 
@@ -99,7 +99,7 @@ export function ChatPanel() {
               value={question}
               onChange={(event) => setQuestion(event.target.value)}
               className="h-11 w-full rounded-lg border border-slate-300 px-4 text-sm text-ink placeholder:text-slate-400 focus:border-standard-blue"
-              placeholder="What is Level AA?"
+              placeholder="What is Agentic Accessibility?"
             />
           </label>
           <button

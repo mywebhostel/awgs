@@ -23,8 +23,37 @@ export function TopNav() {
 
         <nav aria-label="Primary" className="hidden items-center gap-1 lg:flex">
           {topNavItems.map((item) => {
-            const active = pathname === item.href || pathname.startsWith(`${item.href}/`);
-            return (
+            const active =
+              pathname === item.href ||
+              pathname.startsWith(`${item.href}/`) ||
+              item.children?.some((child) => pathname === child.href || pathname.startsWith(`${child.href}/`));
+            return item.children ? (
+              <div key={item.href} className="group relative">
+                <Link
+                  href={item.href}
+                  className={cn(
+                    "rounded-md px-3 py-2 text-sm font-medium text-slate-600 hover:bg-slate-100 hover:text-ink",
+                    active && "bg-slate-100 text-ink"
+                  )}
+                  aria-haspopup="true"
+                >
+                  {item.label}
+                </Link>
+                <div className="invisible absolute left-0 top-full z-50 w-64 pt-2 opacity-0 transition group-focus-within:visible group-focus-within:opacity-100 group-hover:visible group-hover:opacity-100">
+                  <div className="rounded-lg border border-slate-200 bg-white p-2 shadow-soft">
+                    {item.children.map((child) => (
+                      <Link
+                        key={child.href}
+                        href={child.href}
+                        className="block rounded-md px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100 hover:text-ink"
+                      >
+                        {child.label}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ) : (
               <Link
                 key={item.href}
                 href={item.href}
@@ -73,14 +102,29 @@ export function TopNav() {
         <div className="border-t border-slate-200 bg-white lg:hidden">
           <nav aria-label="Mobile primary" className="mx-auto flex max-w-7xl flex-col gap-1 px-4 py-3 sm:px-6">
             {topNavItems.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="rounded-md px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100"
-                onClick={() => setOpen(false)}
-              >
-                {item.label}
-              </Link>
+              <div key={item.href}>
+                <Link
+                  href={item.href}
+                  className="block rounded-md px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100"
+                  onClick={() => setOpen(false)}
+                >
+                  {item.label}
+                </Link>
+                {item.children ? (
+                  <div className="ml-3 border-l border-slate-200 pl-2">
+                    {item.children.map((child) => (
+                      <Link
+                        key={child.href}
+                        href={child.href}
+                        className="block rounded-md px-3 py-2 text-sm font-medium text-slate-600 hover:bg-slate-100"
+                        onClick={() => setOpen(false)}
+                      >
+                        {child.label}
+                      </Link>
+                    ))}
+                  </div>
+                ) : null}
+              </div>
             ))}
             <div className="mt-2 grid grid-cols-2 gap-2 border-t border-slate-200 pt-3">
               <Link href="/search" className="rounded-md border border-slate-200 px-3 py-2 text-sm font-medium">

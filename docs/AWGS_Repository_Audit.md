@@ -28,7 +28,7 @@ The recommended documentation hierarchy is:
 | Area | Canonical Location | Notes |
 |------|--------------------|-------|
 | Normative AWGS 1.0 Foundation Specification | `content/standard/awgs-1-0-foundation.mdx` | This should remain the source for compliance, conformance, governance domains, principles, assessment, glossary, and roadmap language. |
-| Rendered full standard | `src/app/standard/full/page.tsx` | Imports and renders the canonical MDX source. |
+| Rendered full standard | `src/app/standards/awgs/full/page.tsx`; compatibility route `src/app/standard/full/page.tsx` | Imports and renders the canonical MDX source. |
 | Structured website data | `src/lib/awgs.ts` | Current source for cards, search entries, planned KB article metadata, and mock chat responses. Treat as presentation/index data, not independent normative content. |
 | Website information architecture | `docs/website-specification.md` | Canonical repository document for site pages, route responsibilities, content hierarchy, search, knowledge base structure, accessibility, and deployment constraints. |
 | Project context and future-agent instructions | `docs/project-context.md` | Canonical contributor and future-agent guidance for preserving vendor neutrality, source hierarchy, and static hosting constraints. |
@@ -178,7 +178,11 @@ The following files were created because they improve maintainability and avoid 
 
 - `docs/AWGS_Repository_Audit.md`
 - `docs/decision-log.md`
+- `docs/awgs-decisions.md`
+- `docs/awgs-standard.md`
+- `docs/agentic-accessibility-vision.md`
 - `docs/website-specification.md`
+- `docs/website-spec.md`
 - `docs/project-context.md`
 - `docs/rag-assistant-architecture.md`
 - `content/public/changelog.mdx`

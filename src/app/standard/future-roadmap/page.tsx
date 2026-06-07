@@ -9,7 +9,7 @@ export default function FutureRoadmapPage() {
       <SectionHeader
         eyebrow="Future Directions"
         title="Future Roadmap"
-        description="Future AWGS versions may expand coverage as agentic web ecosystems mature."
+        description="Future AWGS directions are exploratory until drafted, reviewed, and published as versioned standard material."
       />
 
       <div className="grid gap-4 md:grid-cols-2">

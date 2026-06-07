@@ -15,6 +15,7 @@ This log records project decisions that can be observed from the repository and 
 | 2026-06-07 | Treat `src/lib/awgs.ts` as structured presentation and index data, not as the independent normative source. | Active | Repository audit result | Reduces drift risk between rendered UI cards and the canonical MDX specification. |
 | 2026-06-07 | Add public AWGS change and version logs as public MDX content rendered by site routes. | Active | `content/public/changelog.mdx`; `content/public/version-log.mdx`; `src/app/changelog/page.tsx`; `src/app/versions/page.tsx` | Makes AWGS standard and guideline publication history visible to public readers without adding normative requirements. |
 | 2026-06-07 | Separate AWGS publication logs from website technical history. | Active | `content/public/changelog.mdx`; `content/public/version-log.mdx`; `content/public/website-log.mdx`; `src/app/website-log/page.tsx` | Keeps AWGS standard and guideline publication records distinct from implementation, hosting, and repository changes. |
+| 2026-06-07 | Reposition the website as the public home for the Agentic Accessibility Initiative with AWGS as the first standard. | Active | `src/app/page.tsx`; `src/app/vision/*`; `src/app/standards/*`; `docs/agentic-accessibility-vision.md`; `docs/website-spec.md` | Establishes the broader initiative architecture while preserving AWGS 1.0 content and legacy routes. |
 
 ## Open Decisions
 

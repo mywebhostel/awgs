@@ -11,8 +11,8 @@ export default function StandardPage() {
     <div className="space-y-10">
       <SectionHeader
         eyebrow="AWGS 1.0"
-        title="Standard Overview"
-        description="The Agentic Web Governance Standard defines a common governance framework for interactions involving autonomous AI agents and digital systems."
+        title="AWGS 1.0 Standard Overview"
+        description="The Agentic Web Governance Standard is the first standard developed under the broader Agentic Accessibility vision. It defines a common governance framework for interactions involving autonomous AI agents and digital systems."
       />
 
       <div className="grid gap-4 md:grid-cols-2">
@@ -52,7 +52,7 @@ export default function StandardPage() {
           <p className="mt-1 text-sm text-slate-600">The complete Markdown source is rendered as MDX.</p>
         </div>
         <Link
-          href="/standard/full"
+          href="/standards/awgs/full"
           className="inline-flex items-center justify-center gap-2 rounded-lg bg-ink px-4 py-2.5 text-sm font-semibold text-white hover:bg-slate-800"
         >
           <FileText className="h-4 w-4" aria-hidden="true" />

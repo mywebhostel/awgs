@@ -10,13 +10,16 @@ export function Footer() {
             <p className="mt-1 text-sm text-slate-600">Vendor-neutral governance guidance for the Agentic Web.</p>
           </div>
           <nav aria-label="Footer" className="flex flex-wrap gap-4 text-sm text-slate-600">
-            <Link href="/standard">Standard</Link>
+            <Link href="/vision/agentic-accessibility">Vision</Link>
+            <Link href="/standards">Standards</Link>
+            <Link href="/standards/awgs">AWGS 1.0</Link>
             <Link href="/knowledge-base">Knowledge Base</Link>
+            <Link href="/glossary">Glossary</Link>
+            <Link href="/research">Research</Link>
             <Link href="/contribute">Contribute</Link>
-            <Link href="/changelog">Change Log</Link>
+            <Link href="/changelog">AWGS Change Log</Link>
             <Link href="/versions">Versions</Link>
             <Link href="/website-log">Website Log</Link>
-            <Link href="/about">About</Link>
           </nav>
         </div>
         <p className="text-xs text-slate-500">AWGS 1.0 Foundation Specification. Public Draft Standard.</p>

@@ -4,7 +4,7 @@ Status: Maintainer and future-agent guidance
 
 ## Project Purpose
 
-This repository contains a public documentation website for the Agentic Web Governance Standard (AWGS). The site presents AWGS 1.0 as an independent, vendor-neutral public draft standard for trustworthy interactions between autonomous agents and digital services.
+This repository contains the public website for the Agentic Accessibility Initiative. The site presents Agentic Accessibility as the broader vision and AWGS 1.0 as the first independent, vendor-neutral public draft standard under that initiative.
 
 ## Current Implementation
 
@@ -13,25 +13,30 @@ This repository contains a public documentation website for the Agentic Web Gove
 - Styling: Tailwind CSS.
 - Content support: MDX through `@next/mdx`.
 - Hosting target: static GitHub Pages export.
+- Primary vision source: `docs/agentic-accessibility-vision.md`.
 - Primary standard source: `content/standard/awgs-1-0-foundation.mdx`.
 - Mock assistant: `src/components/chat/ChatPanel.tsx`, `src/app/api/chat/route.ts`, and `src/lib/awgs.ts` `answerFromAwgs`.
 
 ## Canonical Source Hierarchy
 
-1. `content/standard/awgs-1-0-foundation.mdx` is the canonical source for AWGS 1.0 standard content.
-2. `src/lib/awgs.ts` contains structured presentation, search, planned article, and mock assistant data.
-3. `docs/website-specification.md` defines website information architecture and content structure.
-4. `docs/rag-assistant-architecture.md` defines the future assistant architecture.
-5. `docs/decision-log.md` records project decisions.
-6. `README.md` remains the setup, local running, and publishing entry point.
+1. `docs/agentic-accessibility-vision.md` is the canonical source for the broader initiative vision.
+2. `content/standard/awgs-1-0-foundation.mdx` is the canonical source for AWGS 1.0 standard content.
+3. `docs/awgs-standard.md` defines AWGS source-of-truth handling.
+4. `src/lib/awgs.ts` contains structured presentation, search, planned article, and mock assistant data.
+5. `docs/website-spec.md` defines website information architecture and content structure.
+6. `docs/rag-assistant-architecture.md` defines the future assistant architecture.
+7. `docs/awgs-decisions.md` and `docs/decision-log.md` record project decisions.
+8. `README.md` remains the setup, local running, and publishing entry point.
 
 ## Editing Instructions
 
-- Preserve AWGS as an independent public standard.
+- Preserve Agentic Accessibility as the broad initiative.
+- Preserve AWGS as the first independent public standard under that initiative.
 - Preserve vendor neutrality in standard text, examples, and implementation guidance.
 - Do not introduce references to private frameworks, private products, or organization-specific dependencies in AWGS content.
 - Do not add unsupported origin, authorship, certification, or governance claims.
 - Avoid marketing language.
+- Keep future standards and future certification programs clearly marked as exploratory until published.
 - Avoid duplicating normative text outside the canonical MDX specification.
 - When compliance levels, governance domains, glossary definitions, conformance requirements, or assessment model language changes, update the MDX specification first.
 - Keep `src/lib/awgs.ts` aligned with the MDX source until a generated data pipeline exists.

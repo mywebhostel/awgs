@@ -32,6 +32,34 @@ export type SearchItem = {
   keywords: string[];
 };
 
+export type FutureStandardArea = {
+  title: string;
+  status: "Exploratory / Future Work";
+  description: string;
+};
+
+export const agenticAccessibilityDefinition =
+  "The principle that individuals and organizations should be able to interact with digital systems through trusted autonomous agents acting on their behalf.";
+
+export const agenticAccessibilityPrinciples = [
+  {
+    name: "Delegated Access",
+    description: "People and organizations should be able to authorize trusted agents to interact with digital services on their behalf."
+  },
+  {
+    name: "Machine-Readable Participation",
+    description: "Digital services should expose capabilities, policies, and constraints in forms that autonomous agents can discover and understand."
+  },
+  {
+    name: "Transparent Representation",
+    description: "Agent actions should be understandable to users, services, and reviewers, especially when outcomes have significant consequences."
+  },
+  {
+    name: "Accountable Automation",
+    description: "Agent-mediated interactions should preserve auditability, provenance, oversight, and meaningful routes for correction or escalation."
+  }
+];
+
 export const principles: Principle[] = [
   {
     id: "P1",
@@ -189,6 +217,11 @@ export const assessmentMethods = [
 
 export const glossary: GlossaryTerm[] = [
   {
+    term: "Agentic Accessibility",
+    definition:
+      "The principle that individuals and organizations should be able to interact with digital systems through trusted autonomous agents acting on their behalf."
+  },
+  {
     term: "Agent",
     definition: "A software entity capable of performing actions on behalf of a user, organization, or another system."
   },
@@ -237,89 +270,164 @@ export const roadmapItems = [
   "Agent Safety Certification"
 ];
 
+export const futureStandardAreas: FutureStandardArea[] = [
+  {
+    title: "Agent Capability Manifest",
+    status: "Exploratory / Future Work",
+    description: "A possible format for describing agent-accessible capabilities, limits, service boundaries, and machine-readable policies."
+  },
+  {
+    title: "Agent Identity Profile",
+    status: "Exploratory / Future Work",
+    description: "A possible profile for identifying agents, delegated authority, service identities, credentials, and trusted representatives."
+  },
+  {
+    title: "Agent Trust Metadata",
+    status: "Exploratory / Future Work",
+    description: "A possible metadata model for provenance, authenticity, reliability signals, and trust context in agentic interactions."
+  },
+  {
+    title: "Agent Governance Profiles",
+    status: "Exploratory / Future Work",
+    description: "Possible implementation profiles for governance domains, risk posture, oversight expectations, and assurance evidence."
+  },
+  {
+    title: "Agent-to-Agent Governance",
+    status: "Exploratory / Future Work",
+    description: "Future governance models for interactions involving multiple agents, delegated tasks, and shared accountability."
+  },
+  {
+    title: "Continuous Compliance Models",
+    status: "Exploratory / Future Work",
+    description: "Future approaches for monitoring compliance signals, evidence freshness, and conformance claims over time."
+  }
+];
+
 export const knowledgeBaseArticles = [
   {
     title: "Preparing an Agent-Ready Service",
     href: "/knowledge-base/preparing-agent-ready-service",
     status: "Planned",
+    category: "AWGS",
     description: "Guidance for documenting capabilities, service boundaries, and machine-readable metadata."
   },
   {
     title: "Evidence Collection for AWGS Assessment",
     href: "/knowledge-base/evidence-collection",
     status: "Planned",
+    category: "AWGS",
     description: "A future checklist for gathering governance, privacy, risk, and audit artifacts."
   },
   {
     title: "Designing Human Oversight Workflows",
     href: "/knowledge-base/human-oversight-workflows",
     status: "Planned",
+    category: "Human Oversight",
     description: "Patterns for review, escalation, approval, rejection, and override controls."
   },
   {
     title: "Agent Identity and Delegated Authority",
     href: "/knowledge-base/agent-identity-delegation",
     status: "Planned",
+    category: "Identity",
     description: "Conceptual guidance for identity, credential management, access scopes, and delegated permissions."
   }
 ];
 
+export const knowledgeBaseCategories = [
+  "Introduction",
+  "Agentic Accessibility",
+  "AWGS",
+  "Discoverability",
+  "Interoperability",
+  "Identity",
+  "Authorization",
+  "Transparency",
+  "Accountability",
+  "Trust",
+  "Privacy",
+  "Safety",
+  "Human Oversight",
+  "Future Work"
+];
+
 export const searchIndex: SearchItem[] = [
   {
+    title: "Agentic Accessibility Vision",
+    href: "/vision/agentic-accessibility",
+    category: "Vision",
+    description: "The broader public-interest vision for trusted agent-mediated access to digital services.",
+    keywords: ["agentic accessibility", "vision", "trusted agents", "digital representatives", "universal design"]
+  },
+  {
+    title: "Initiative Principles",
+    href: "/vision/principles",
+    category: "Vision",
+    description: "Principles for delegated access, machine-readable participation, transparent representation, and accountable automation.",
+    keywords: ["principles", "delegated access", "machine readable", "transparency", "accountability"]
+  },
+  {
+    title: "Standards",
+    href: "/standards",
+    category: "Standards",
+    description: "Standards under the Agentic Accessibility Initiative, beginning with AWGS 1.0.",
+    keywords: ["standards", "awgs", "agentic accessibility", "future standards"]
+  },
+  {
     title: "AWGS Overview",
-    href: "/standard/overview",
+    href: "/standards/awgs/overview",
     category: "Standard",
     description: "Purpose, vision, vendor neutrality, scope, and the public draft status of AWGS 1.0.",
-    keywords: ["purpose", "vision", "scope", "vendor neutrality", "public draft"]
+    keywords: ["purpose", "vision", "scope", "vendor neutrality", "public draft", "awgs"]
   },
   {
     title: "Core Principles",
-    href: "/standard/principles",
+    href: "/standards/awgs/principles",
     category: "Guidelines",
     description: "Discoverability, interoperability, transparency, accountability, trust, privacy, safety, and human oversight.",
     keywords: ["principles", "discoverability", "privacy", "safety", "human oversight"]
   },
   {
     title: "Governance Domains",
-    href: "/standard/governance-domains",
+    href: "/standards/awgs/domains",
     category: "Standard",
     description: "Nine governance domains that organize AWGS requirements and implementation controls.",
     keywords: ["domains", "identity", "authorization", "accountability", "trust"]
   },
   {
     title: "Compliance Levels",
-    href: "/standard/compliance-levels",
+    href: "/standards/awgs/compliance-levels",
     category: "Conformance",
     description: "Compare Level A, Level AA, and Level AAA objectives and maturity expectations.",
     keywords: ["level a", "level aa", "level aaa", "compliance", "agent ready", "agent governed"]
   },
   {
     title: "Conformance",
-    href: "/standard/conformance",
+    href: "/standards/awgs/conformance",
     category: "Conformance",
     description: "Rules for claiming conformance and maintaining compliance during a claim period.",
     keywords: ["claim", "mandatory", "documentation", "conformance"]
   },
   {
     title: "Assessment Model",
-    href: "/standard/assessment-model",
+    href: "/standards/awgs/assessment-model",
     category: "Assessment",
     description: "Automated, semi-automated, and manual evaluation methods for AWGS assessments.",
     keywords: ["assessment", "automated", "manual", "validation", "review"]
   },
   {
     title: "Glossary",
-    href: "/standard/glossary",
+    href: "/glossary",
     category: "Reference",
-    description: "Definitions for agents, capabilities, delegation, digital services, provenance, and trust signals.",
-    keywords: ["glossary", "definitions", "agent", "capability", "provenance"]
+    description: "Definitions for Agentic Accessibility, agents, capabilities, delegation, digital services, provenance, and trust signals.",
+    keywords: ["glossary", "definitions", "agentic accessibility", "agent", "capability", "provenance"]
   },
   {
-    title: "Future Roadmap",
-    href: "/standard/future-roadmap",
-    category: "Roadmap",
-    description: "Future directions including multi-agent systems, identity frameworks, and continuous compliance.",
-    keywords: ["roadmap", "future", "multi-agent", "certification"]
+    title: "Future Work",
+    href: "/standards/future-work",
+    category: "Research",
+    description: "Exploratory future areas including capability manifests, identity profiles, trust metadata, and continuous compliance.",
+    keywords: ["future", "exploratory", "capability manifest", "identity profile", "trust metadata"]
   },
   {
     title: "Knowledge Base",
@@ -332,8 +440,8 @@ export const searchIndex: SearchItem[] = [
     title: "RAG Assistant",
     href: "/assistant",
     category: "Tools",
-    description: "Placeholder chat interface for future retrieval-augmented AWGS assistance.",
-    keywords: ["chat", "rag", "assistant", "mock"]
+    description: "Placeholder chat interface for future retrieval-augmented assistance over Agentic Accessibility and AWGS content.",
+    keywords: ["chat", "rag", "assistant", "mock", "agentic accessibility", "awgs"]
   },
   {
     title: "Change Log",
@@ -355,11 +463,22 @@ export const searchIndex: SearchItem[] = [
     category: "Publication",
     description: "Technical record of website implementation, repository, hosting, and tooling changes.",
     keywords: ["website", "technical log", "hosting", "deployment", "repository"]
+  },
+  {
+    title: "Research",
+    href: "/research",
+    category: "Research",
+    description: "Open research directions for agentic access, governance, trust, safety, and future standards.",
+    keywords: ["research", "future work", "governance", "trust", "safety"]
   }
 ];
 
 export function answerFromAwgs(question: string) {
   const normalized = question.toLowerCase();
+
+  if (normalized.includes("agentic accessibility") || normalized.includes("vision") || normalized.includes("trusted agent")) {
+    return `Agentic Accessibility is ${agenticAccessibilityDefinition} AWGS is the first concrete standard supporting this broader vision.`;
+  }
 
   if (normalized.includes("compliance") || normalized.includes("level")) {
     return "AWGS defines three compliance levels: Level A for Agent Ready systems, Level AA for Agent Interoperable systems, and Level AAA for Agent Governed systems with mature trust, transparency, safety, and oversight controls.";
@@ -381,5 +500,9 @@ export function answerFromAwgs(question: string) {
     return "Organizations may claim AWGS conformance only when mandatory requirements are satisfied, required controls are operational, required documentation exists, and compliance is maintained during the claim period.";
   }
 
-  return "AWGS is a vendor-neutral public draft standard for safe, transparent, interoperable, accountable, and trustworthy interactions between AI agents and digital services. This assistant is currently a mock placeholder and does not perform real retrieval yet.";
+  if (normalized.includes("future") || normalized.includes("roadmap") || normalized.includes("manifest") || normalized.includes("identity profile")) {
+    return "Future work is exploratory and may include an Agent Capability Manifest, Agent Identity Profile, Agent Trust Metadata, Agent Governance Profiles, Agent-to-Agent Governance, and Continuous Compliance Models. These are not finalized requirements.";
+  }
+
+  return "The Agentic Accessibility Initiative promotes open, vendor-neutral principles and standards for trustworthy interaction between autonomous agents and digital services. AWGS is the first standard under that vision. This assistant is currently a mock placeholder and does not perform real retrieval yet.";
 }

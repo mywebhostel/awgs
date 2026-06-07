@@ -6,12 +6,12 @@ import { SectionHeader } from "@/components/content/SectionHeader";
 const contributionPaths = [
   {
     title: "Review the draft",
-    description: "Identify unclear requirements, missing definitions, and places where conformance language should be more precise.",
+    description: "Identify unclear requirements, missing definitions, and places where AWGS conformance language should be more precise.",
     icon: ScrollText
   },
   {
     title: "Propose guidance",
-    description: "Suggest implementation notes, examples, assessment evidence, and knowledge base articles that support the public standard.",
+    description: "Suggest implementation notes, examples, assessment evidence, and knowledge base articles that support Agentic Accessibility and AWGS.",
     icon: GitPullRequest
   },
   {
@@ -26,8 +26,8 @@ export default function ContributePage() {
     <div className="mx-auto max-w-7xl space-y-10 px-4 py-10 sm:px-6 lg:px-8">
       <SectionHeader
         eyebrow="Contribute"
-        title="Contribute to AWGS"
-        description="AWGS is designed to be maintained through open governance, public review, consultation, and contributor participation."
+        title="Contribute to the Initiative"
+        description="The Agentic Accessibility Initiative and AWGS are designed to be maintained through open governance, public review, consultation, and contributor participation."
       />
 
       <div className="grid gap-4 md:grid-cols-3">
