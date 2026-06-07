@@ -18,7 +18,9 @@ export function ComplianceComparison() {
           Level A, AA, and AAA at a glance
         </h2>
         <p className="mt-3 text-slate-600">
-          AWGS uses progressive compliance levels so organizations can state readiness, interoperability, and governance maturity clearly.
+          AWGS 1.0 uses progressive compliance levels to describe readiness, interoperability, and governance maturity.
+          Until AWGS 1.1 requirements and success criteria exist, Level A, Level AA, and Level AAA should be treated as
+          maturity targets, not independently certified claims.
         </p>
       </div>
       <div className="grid gap-4 lg:grid-cols-3">

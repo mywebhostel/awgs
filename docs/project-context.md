@@ -37,6 +37,8 @@ This repository contains the public website for the Agentic Accessibility Initia
 - Do not add unsupported origin, authorship, certification, or governance claims.
 - Avoid marketing language.
 - Keep future standards and future certification programs clearly marked as exploratory until published.
+- Keep the Agentic Accessibility Manifesto informative and non-normative.
+- Keep AWGS 1.0 conformance language provisional until AWGS 1.1 requirements and success criteria exist.
 - Avoid duplicating normative text outside the canonical MDX specification.
 - When compliance levels, governance domains, glossary definitions, conformance requirements, or assessment model language changes, update the MDX specification first.
 - Keep `src/lib/awgs.ts` aligned with the MDX source until a generated data pipeline exists.

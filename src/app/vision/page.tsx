@@ -40,18 +40,35 @@ export default function VisionPage() {
         ))}
       </section>
 
-      <div className="flex flex-col gap-3 rounded-lg border border-slate-200 bg-white p-5 sm:flex-row sm:items-center sm:justify-between">
-        <div>
-          <h2 className="text-xl font-semibold tracking-normal text-ink">Read the full vision</h2>
-          <p className="mt-1 text-sm text-slate-600">How agentic access extends the web accessibility and open standards tradition.</p>
+      <div className="grid gap-4 md:grid-cols-2">
+        <div className="flex flex-col gap-3 rounded-lg border border-slate-200 bg-white p-5 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <h2 className="text-xl font-semibold tracking-normal text-ink">Read the full vision</h2>
+            <p className="mt-1 text-sm text-slate-600">How agentic access extends the web accessibility and open standards tradition.</p>
+          </div>
+          <Link
+            href="/vision/agentic-accessibility"
+            className="inline-flex items-center justify-center gap-2 rounded-lg bg-ink px-4 py-2.5 text-sm font-semibold text-white hover:bg-slate-800"
+          >
+            Agentic Accessibility
+            <ArrowRight className="h-4 w-4" aria-hidden="true" />
+          </Link>
         </div>
-        <Link
-          href="/vision/agentic-accessibility"
-          className="inline-flex items-center justify-center gap-2 rounded-lg bg-ink px-4 py-2.5 text-sm font-semibold text-white hover:bg-slate-800"
-        >
-          Agentic Accessibility
-          <ArrowRight className="h-4 w-4" aria-hidden="true" />
-        </Link>
+        <div className="flex flex-col gap-3 rounded-lg border border-slate-200 bg-white p-5 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <h2 className="text-xl font-semibold tracking-normal text-ink">Read the manifesto</h2>
+            <p className="mt-1 text-sm text-slate-600">
+              An informative, non-normative statement of values for trusted agent-mediated access.
+            </p>
+          </div>
+          <Link
+            href="/vision/manifesto"
+            className="inline-flex items-center justify-center gap-2 rounded-lg bg-ink px-4 py-2.5 text-sm font-semibold text-white hover:bg-slate-800"
+          >
+            Manifesto
+            <ArrowRight className="h-4 w-4" aria-hidden="true" />
+          </Link>
+        </div>
       </div>
     </div>
   );

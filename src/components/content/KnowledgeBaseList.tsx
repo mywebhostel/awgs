@@ -14,6 +14,7 @@ export function KnowledgeBaseList() {
             <Badge tone="amber">{article.status}</Badge>
           </div>
           <p className="mt-3 text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">{article.category}</p>
+          <p className="mt-2 text-xs font-semibold text-amber-800">{article.note}</p>
           <p className="mt-3 flex-1 text-sm leading-6 text-slate-600">{article.description}</p>
           <Link
             href={article.href}

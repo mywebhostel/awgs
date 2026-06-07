@@ -6,8 +6,8 @@ export function Footer() {
       <div className="mx-auto flex max-w-7xl flex-col gap-6 px-4 py-10 sm:px-6 lg:px-8">
         <div className="flex flex-col justify-between gap-4 md:flex-row md:items-center">
           <div>
-            <p className="text-sm font-semibold text-ink">Agentic Web Governance Standard</p>
-            <p className="mt-1 text-sm text-slate-600">Vendor-neutral governance guidance for the Agentic Web.</p>
+            <p className="text-sm font-semibold text-ink">Agentic Accessibility Initiative</p>
+            <p className="mt-1 text-sm text-slate-600">AWGS 1.0 Foundation Specification. Public Draft Standard.</p>
           </div>
           <nav aria-label="Footer" className="flex flex-wrap gap-4 text-sm text-slate-600">
             <Link href="/vision/agentic-accessibility">Vision</Link>
@@ -22,7 +22,7 @@ export function Footer() {
             <Link href="/website-log">Website Log</Link>
           </nav>
         </div>
-        <p className="text-xs text-slate-500">AWGS 1.0 Foundation Specification. Public Draft Standard.</p>
+        <p className="text-xs text-slate-500">Vendor-neutral public standards initiative for trusted agent-mediated access.</p>
       </div>
     </footer>
   );

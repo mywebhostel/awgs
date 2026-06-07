@@ -305,10 +305,27 @@ export const futureStandardAreas: FutureStandardArea[] = [
 
 export const knowledgeBaseArticles = [
   {
+    title: "What is Agentic Accessibility?",
+    href: "/knowledge-base/what-is-agentic-accessibility",
+    status: "Planned",
+    category: "Agentic Accessibility",
+    note: "Planned / Informative / Not a conformance requirement.",
+    description: "Introductory article explaining the broader vision for trusted autonomous agents acting on behalf of people and organizations."
+  },
+  {
+    title: "What is AWGS?",
+    href: "/knowledge-base/what-is-awgs",
+    status: "Planned",
+    category: "AWGS",
+    note: "Planned / Informative / Not a conformance requirement.",
+    description: "Introductory article explaining AWGS 1.0 as the first public draft standard under the Agentic Accessibility Initiative."
+  },
+  {
     title: "Preparing an Agent-Ready Service",
     href: "/knowledge-base/preparing-agent-ready-service",
     status: "Planned",
     category: "AWGS",
+    note: "Planned / Informative / Not a conformance requirement.",
     description: "Guidance for documenting capabilities, service boundaries, and machine-readable metadata."
   },
   {
@@ -316,6 +333,7 @@ export const knowledgeBaseArticles = [
     href: "/knowledge-base/evidence-collection",
     status: "Planned",
     category: "AWGS",
+    note: "Planned / Informative / Not a conformance requirement.",
     description: "A future checklist for gathering governance, privacy, risk, and audit artifacts."
   },
   {
@@ -323,6 +341,7 @@ export const knowledgeBaseArticles = [
     href: "/knowledge-base/human-oversight-workflows",
     status: "Planned",
     category: "Human Oversight",
+    note: "Planned / Informative / Not a conformance requirement.",
     description: "Patterns for review, escalation, approval, rejection, and override controls."
   },
   {
@@ -330,7 +349,16 @@ export const knowledgeBaseArticles = [
     href: "/knowledge-base/agent-identity-delegation",
     status: "Planned",
     category: "Identity",
+    note: "Planned / Informative / Not a conformance requirement.",
     description: "Conceptual guidance for identity, credential management, access scopes, and delegated permissions."
+  },
+  {
+    title: "Agent Capability Manifest: Future Work",
+    href: "/knowledge-base/agent-capability-manifest-future-work",
+    status: "Planned",
+    category: "Future Work",
+    note: "Planned / Informative / Not a conformance requirement.",
+    description: "Exploratory article outline for a future capability manifest concept. This is not a published standard."
   }
 ];
 
@@ -365,6 +393,13 @@ export const searchIndex: SearchItem[] = [
     category: "Vision",
     description: "Principles for delegated access, machine-readable participation, transparent representation, and accountable automation.",
     keywords: ["principles", "delegated access", "machine readable", "transparency", "accountability"]
+  },
+  {
+    title: "Agentic Accessibility Manifesto",
+    href: "/vision/manifesto",
+    category: "Vision",
+    description: "Informative, non-normative values statement for trusted agent-mediated access to digital services.",
+    keywords: ["manifesto", "agentic accessibility", "human agency", "delegation", "interoperability"]
   },
   {
     title: "Standards",
@@ -433,15 +468,15 @@ export const searchIndex: SearchItem[] = [
     title: "Knowledge Base",
     href: "/knowledge-base",
     category: "Knowledge Base",
-    description: "Prepared structure for future implementation articles and practical guidance.",
-    keywords: ["articles", "guidance", "implementation", "knowledge base"]
+    description: "Prepared structure for future initiative, AWGS, domain, glossary, and future-work articles.",
+    keywords: ["articles", "guidance", "implementation", "knowledge base", "agentic accessibility", "awgs"]
   },
   {
     title: "RAG Assistant",
     href: "/assistant",
     category: "Tools",
-    description: "Placeholder chat interface for future retrieval-augmented assistance over Agentic Accessibility and AWGS content.",
-    keywords: ["chat", "rag", "assistant", "mock", "agentic accessibility", "awgs"]
+    description: "Placeholder chat interface for future retrieval-augmented assistance over vision documents, AWGS, knowledge base articles, glossary, research notes, and future requirements.",
+    keywords: ["chat", "rag", "assistant", "mock", "agentic accessibility", "awgs", "future requirements"]
   },
   {
     title: "Change Log",
@@ -481,7 +516,7 @@ export function answerFromAwgs(question: string) {
   }
 
   if (normalized.includes("compliance") || normalized.includes("level")) {
-    return "AWGS defines three compliance levels: Level A for Agent Ready systems, Level AA for Agent Interoperable systems, and Level AAA for Agent Governed systems with mature trust, transparency, safety, and oversight controls.";
+    return "AWGS 1.0 defines Level A, Level AA, and Level AAA as maturity targets for agent-ready, interoperable, and governed services. Formal testable conformance criteria are expected in a future AWGS 1.1 Requirements and Success Criteria document.";
   }
 
   if (normalized.includes("principle") || normalized.includes("privacy") || normalized.includes("safety")) {
@@ -497,7 +532,7 @@ export function answerFromAwgs(question: string) {
   }
 
   if (normalized.includes("conformance") || normalized.includes("claim")) {
-    return "Organizations may claim AWGS conformance only when mandatory requirements are satisfied, required controls are operational, required documentation exists, and compliance is maintained during the claim period.";
+    return "AWGS 1.0 provides foundation guidance, principles, domains, and provisional compliance levels. Until AWGS 1.1 requirements exist, Level A, Level AA, and Level AAA should be treated as maturity targets, not independently certified claims.";
   }
 
   if (normalized.includes("future") || normalized.includes("roadmap") || normalized.includes("manifest") || normalized.includes("identity profile")) {

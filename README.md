@@ -105,6 +105,7 @@ Repository-level documentation lives in `docs/`:
 - `docs/website-spec.md` - canonical website information architecture, content hierarchy, knowledge base structure, search expectations, accessibility notes, and deployment constraints.
 - `docs/website-specification.md` - historical AWGS-only website specification retained for context.
 - `docs/project-context.md` - maintainer and future-agent instructions for preserving vendor neutrality and the canonical content hierarchy.
+- `docs/rag-architecture.md` - canonical future retrieval architecture.
 - `docs/rag-assistant-architecture.md` - current mock assistant behavior and future retrieval architecture.
 - `docs/decision-log.md` - observed and intentional project decisions.
 - `AGENTS.md` - instructions for future coding agents.

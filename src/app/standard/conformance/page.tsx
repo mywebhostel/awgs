@@ -17,12 +17,20 @@ export default function ConformancePage() {
     <div className="space-y-8">
       <SectionHeader
         eyebrow="Conformance"
-        title="Claiming AWGS Conformance"
-        description="Organizations should clearly state the level of compliance being claimed. Partial implementation shall not be represented as full compliance."
+        title="AWGS 1.0 Conformance Status"
+        description="AWGS 1.0 provides foundation guidance, principles, domains, and provisional compliance levels. Formal testable conformance criteria are expected in a future AWGS 1.1 Requirements and Success Criteria document."
       />
 
+      <section className="rounded-lg border border-amber-200 bg-amber-50 p-5">
+        <Badge tone="amber">Present-stage status</Badge>
+        <p className="mt-3 text-sm leading-6 text-slate-700">
+          Until AWGS 1.1 exists, Level A, Level AA, and Level AAA should be treated as maturity targets, not independently
+          certified claims. AWGS 1.0 does not create a formal certification scheme.
+        </p>
+      </section>
+
       <Card>
-        <Badge tone="blue">Claim Requirements</Badge>
+        <Badge tone="blue">Foundation Expectations</Badge>
         <ul className="mt-5 grid gap-3 md:grid-cols-2">
           {conformanceCriteria.map((criterion) => (
             <li key={criterion} className="flex gap-3 text-sm leading-6 text-slate-700">
@@ -34,7 +42,11 @@ export default function ConformancePage() {
       </Card>
 
       <section className="rounded-lg border border-slate-200 bg-white p-6">
-        <Badge tone="teal">Claim Examples</Badge>
+        <Badge tone="teal">Maturity Target Labels</Badge>
+        <p className="mt-4 text-sm leading-6 text-slate-600">
+          These labels describe provisional maturity targets in AWGS 1.0. They should not be represented as third-party
+          certification badges or independently verified claims.
+        </p>
         <div className="mt-5 grid gap-3 sm:grid-cols-3">
           {claimExamples.map((claim) => (
             <div key={claim} className="rounded-lg bg-slate-50 px-4 py-4 text-center text-sm font-semibold text-ink">

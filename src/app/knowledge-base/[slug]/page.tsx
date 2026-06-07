@@ -33,6 +33,7 @@ export default async function KnowledgeBaseArticlePage({ params }: KnowledgeBase
       <article className="mt-8 rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
         <Badge tone="amber">{article.status}</Badge>
         <p className="mt-4 text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">{article.category}</p>
+        <p className="mt-2 text-sm font-semibold text-amber-800">{article.note}</p>
         <h1 className="mt-4 text-4xl font-semibold tracking-normal text-ink">{article.title}</h1>
         <p className="mt-4 text-base leading-7 text-slate-600">{article.description}</p>
         <div className="mt-8 rounded-lg bg-slate-50 p-5">

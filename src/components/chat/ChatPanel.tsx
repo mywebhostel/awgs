@@ -67,13 +67,15 @@ export function ChatPanel() {
           <div>
             <Badge tone="teal">Mock RAG</Badge>
             <h2 id="rag-assistant-title" className="mt-3 text-2xl font-semibold tracking-normal text-ink">
-          Initiative assistant
+              Initiative assistant
             </h2>
           </div>
           <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-600">Placeholder API</span>
         </div>
         <p className="mt-3 text-sm leading-6 text-slate-600">
-          This UI is prepared for retrieval-augmented answers over Agentic Accessibility and AWGS content. The current API route returns deterministic mock responses.
+          This UI is prepared for future retrieval over Agentic Accessibility vision documents, AWGS standard documents,
+          knowledge base articles, glossary terms, research notes, and future requirements. It remains mocked for now; the
+          current API route returns deterministic mock responses.
         </p>
       </div>
 

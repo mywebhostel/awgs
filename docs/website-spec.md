@@ -35,6 +35,7 @@ Agentic Accessibility is the broad vision. AWGS is the implementation standard.
 /vision
 /vision/agentic-accessibility
 /vision/principles
+/vision/manifesto
 /standards
 /standards/awgs
 /standards/awgs/overview
@@ -87,12 +88,15 @@ Required homepage sections:
 - What is Agentic Accessibility?
 - Why the Agentic Web needs governance
 - AWGS as the first standard
-- Core principles
+- Core initiative principles
 - Future work
+- Search / knowledge access
+- RAG assistant placeholder
 
 ## Content Source Rules
 
 - Agentic Accessibility vision: `docs/agentic-accessibility-vision.md` and `/vision/agentic-accessibility`.
+- Agentic Accessibility manifesto: `/vision/manifesto`.
 - AWGS standard content: `content/standard/awgs-1-0-foundation.mdx`.
 - Structured presentation and search data: `src/lib/awgs.ts`.
 - Public AWGS change log: `content/public/changelog.mdx`.
@@ -123,11 +127,14 @@ The knowledge base should prepare categories for:
 The current assistant is a mock placeholder. It may answer deterministic questions about:
 
 - Agentic Accessibility
+- Manifesto
 - AWGS
 - Governance domains
 - Compliance levels
 - Glossary
+- Research
 - Future work
+- Future requirements
 
 Future RAG pipeline:
 
@@ -142,6 +149,7 @@ Do not claim real vector search exists until implemented and deployed.
 - Neutral public standard visual language.
 - No commercial product framing.
 - No formal certification claims unless clearly marked as future work.
+- AWGS 1.0 conformance levels should be presented as maturity targets until AWGS 1.1 requirements exist.
 - Responsive layout.
 - Accessible navigation, forms, focus states, and semantic landmarks.
 - Stable GitHub Pages static export.

@@ -1,9 +1,14 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, FileText } from "lucide-react";
 import { Badge } from "@/components/content/Badge";
 import { Card } from "@/components/content/Card";
 import { SectionHeader } from "@/components/content/SectionHeader";
 import { futureStandardAreas } from "@/lib/awgs";
+
+export const metadata: Metadata = {
+  title: "Standards"
+};
 
 export default function StandardsPage() {
   return (

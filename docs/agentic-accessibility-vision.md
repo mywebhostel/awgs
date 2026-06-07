@@ -54,3 +54,9 @@ This analogy should not be read as a legal claim or as a statement that existing
 AWGS is the first concrete standard under the Agentic Accessibility Initiative. It supports the vision by defining governance, interoperability, transparency, accountability, trust, privacy, safety, and human oversight requirements for agentic digital services.
 
 AWGS remains vendor-neutral and implementation-independent.
+
+## Manifesto
+
+The Agentic Accessibility Manifesto is an informative vision document. It is not a technical standard, certification scheme, or legal requirement.
+
+The manifesto emphasizes human agency, authorized delegation, machine-readable clarity, interoperability, verifiable trust, explainable outcomes, privacy-preserving access, accountability, and human oversight.

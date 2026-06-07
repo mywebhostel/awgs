@@ -7,8 +7,14 @@ export default function ComplianceLevelsPage() {
       <SectionHeader
         eyebrow="Compliance"
         title="Compliance Levels"
-        description="AWGS defines three progressive levels: Agent Ready, Agent Interoperable, and Agent Governed."
+        description="AWGS 1.0 defines three progressive maturity targets: Agent Ready, Agent Interoperable, and Agent Governed."
       />
+      <section className="rounded-lg border border-amber-200 bg-amber-50 p-5">
+        <p className="text-sm leading-6 text-slate-700">
+          AWGS 1.0 provides foundation guidance, principles, domains, and provisional compliance levels. Formal testable
+          conformance criteria are expected in a future AWGS 1.1 Requirements and Success Criteria document.
+        </p>
+      </section>
       <ComplianceComparison />
     </div>
   );

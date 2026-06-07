@@ -1,8 +1,13 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { Badge } from "@/components/content/Badge";
 import { SectionHeader } from "@/components/content/SectionHeader";
 import { glossary } from "@/lib/awgs";
+
+export const metadata: Metadata = {
+  title: "Glossary"
+};
 
 export default function GlobalGlossaryPage() {
   return (

@@ -2,6 +2,8 @@
 
 Status: Placeholder architecture for future implementation
 
+The canonical future retrieval architecture is `docs/rag-architecture.md`. This file records implementation-specific notes for the current mock assistant.
+
 ## Current State
 
 The initiative assistant is currently a mock interface. It is designed to show the intended user experience without claiming real retrieval or vector search.
@@ -34,12 +36,25 @@ Recommended corpus:
 - `docs/agentic-accessibility-vision.md`
 - `content/standard/awgs-1-0-foundation.mdx`
 - Future `content/knowledge-base/*.mdx` articles
+- Glossary and research notes
+- Future AWGS requirements and success criteria
 - Future versioned standard files
 - Future public review notes, if approved as citeable informative content
 
 Recommended pipeline:
 
-1. Parse MDX content into structured sections.
+```text
+Markdown / MDX content
+-> chunking
+-> embeddings
+-> vector store
+-> retrieval
+-> cited answers
+```
+
+Implementation sequence:
+
+1. Parse Markdown and MDX content into structured sections.
 2. Split content into chunks with stable source IDs.
 3. Attach metadata for title, route, AWGS version, section, principle, domain, compliance level, and content type.
 4. Generate embeddings for each chunk.

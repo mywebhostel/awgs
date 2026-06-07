@@ -7,7 +7,7 @@ export default function AssistantPage() {
       <SectionHeader
         eyebrow="RAG Placeholder"
         title="Initiative Chat Assistant"
-        description="A prepared chat interface for future retrieval over Agentic Accessibility and AWGS content. The current endpoint returns mock answers based on current public content."
+        description="A prepared chat interface for future retrieval over Agentic Accessibility vision documents, AWGS standard documents, knowledge base articles, glossary terms, research notes, and future requirements. It remains mocked for now; the current endpoint returns mock answers based on current public content."
       />
       <ChatPanel />
     </div>

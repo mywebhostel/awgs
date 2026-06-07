@@ -4,12 +4,12 @@ import { ArrowRight, BookOpen, Network, ShieldCheck } from "lucide-react";
 import { Badge } from "@/components/content/Badge";
 import { Card } from "@/components/content/Card";
 import { ComplianceComparison } from "@/components/content/ComplianceComparison";
+import { ChatPanel } from "@/components/chat/ChatPanel";
 import { SearchInput } from "@/components/search/SearchInput";
 import {
   agenticAccessibilityDefinition,
   agenticAccessibilityPrinciples,
-  futureStandardAreas,
-  principles
+  futureStandardAreas
 } from "@/lib/awgs";
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
@@ -68,13 +68,22 @@ export default function HomePage() {
           <p className="mt-4 text-base leading-7 text-slate-600">{agenticAccessibilityDefinition}</p>
         </div>
         <div className="grid gap-4 md:grid-cols-2">
-          {agenticAccessibilityPrinciples.map((principle) => (
-            <Card key={principle.name}>
-              <Network className="h-5 w-5 text-standard-teal" aria-hidden="true" />
-              <h3 className="mt-4 text-lg font-semibold tracking-normal text-ink">{principle.name}</h3>
-              <p className="mt-2 text-sm leading-6 text-slate-600">{principle.description}</p>
-            </Card>
-          ))}
+          <Card>
+            <Network className="h-5 w-5 text-standard-teal" aria-hidden="true" />
+            <h3 className="mt-4 text-lg font-semibold tracking-normal text-ink">Authorized delegation</h3>
+            <p className="mt-2 text-sm leading-6 text-slate-600">
+              Agentic access should let people and organizations delegate digital interaction to trusted representatives
+              without forcing every service interaction to remain manual.
+            </p>
+          </Card>
+          <Card>
+            <Network className="h-5 w-5 text-standard-blue" aria-hidden="true" />
+            <h3 className="mt-4 text-lg font-semibold tracking-normal text-ink">Standards-based trust</h3>
+            <p className="mt-2 text-sm leading-6 text-slate-600">
+              Agentic services need shared expectations for discovery, authority, transparency, accountability, privacy,
+              safety, and oversight.
+            </p>
+          </Card>
         </div>
       </section>
 
@@ -114,18 +123,17 @@ export default function HomePage() {
       <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="mb-8 max-w-3xl">
           <Badge tone="teal">Core Principles</Badge>
-          <h2 className="mt-4 text-3xl font-semibold tracking-normal text-ink">AWGS principles supporting agentic access</h2>
+          <h2 className="mt-4 text-3xl font-semibold tracking-normal text-ink">Core initiative principles</h2>
           <p className="mt-3 text-slate-600">
-            AWGS supports Agentic Accessibility through principles that make agent-mediated interaction discoverable,
-            interoperable, transparent, accountable, trusted, private, safe, and subject to human oversight.
+            These principles guide Agentic Accessibility vision work and help frame the standards that support trusted
+            agent-mediated interaction.
           </p>
         </div>
-        <div className="grid gap-4 md:grid-cols-4">
-          {principles.slice(0, 8).map((principle) => (
-            <Card key={principle.id}>
-              <p className="text-xs font-semibold text-standard-blue">{principle.id}</p>
-              <h3 className="mt-2 text-lg font-semibold tracking-normal text-ink">{principle.name}</h3>
-              <p className="mt-2 text-sm leading-6 text-slate-600">{principle.summary}</p>
+        <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+          {agenticAccessibilityPrinciples.map((principle) => (
+            <Card key={principle.name}>
+              <h3 className="text-lg font-semibold tracking-normal text-ink">{principle.name}</h3>
+              <p className="mt-2 text-sm leading-6 text-slate-600">{principle.description}</p>
             </Card>
           ))}
         </div>
@@ -169,6 +177,21 @@ export default function HomePage() {
             <h2 className="mt-3 text-2xl font-semibold tracking-normal text-ink">Find initiative sections</h2>
           </div>
           <SearchInput compact limit={5} />
+        </div>
+      </section>
+
+      <section className="border-t border-slate-200 bg-white">
+        <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:px-8">
+          <div>
+            <Badge tone="blue">Knowledge Access</Badge>
+            <h2 className="mt-4 text-3xl font-semibold tracking-normal text-ink">RAG assistant placeholder</h2>
+            <p className="mt-3 text-slate-600">
+              The assistant interface is prepared for future retrieval over Agentic Accessibility vision documents, AWGS
+              standard documents, knowledge base articles, glossary terms, research notes, and future requirements. It
+              remains mocked for now.
+            </p>
+          </div>
+          <ChatPanel />
         </div>
       </section>
     </div>

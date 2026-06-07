@@ -10,7 +10,8 @@ export const topNavItems: NavItem[] = [
     href: "/vision",
     children: [
       { label: "Agentic Accessibility", href: "/vision/agentic-accessibility" },
-      { label: "Principles", href: "/vision/principles" }
+      { label: "Principles", href: "/vision/principles" },
+      { label: "Manifesto", href: "/vision/manifesto" }
     ]
   },
   {

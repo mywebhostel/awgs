@@ -14,11 +14,11 @@ export function TopNav() {
   return (
     <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
-        <Link href="/" className="flex min-w-0 items-center gap-3" aria-label="AWGS home">
+        <Link href="/" className="flex min-w-0 items-center gap-3" aria-label="Agentic Accessibility home">
           <span className="flex h-9 w-9 flex-none items-center justify-center rounded-lg bg-ink text-white">
             <BookOpen className="h-5 w-5" aria-hidden="true" />
           </span>
-          <span className="truncate text-sm font-semibold tracking-normal text-ink sm:text-base">AWGS</span>
+          <span className="truncate text-sm font-semibold tracking-normal text-ink sm:text-base">Agentic Accessibility</span>
         </Link>
 
         <nav aria-label="Primary" className="hidden items-center gap-1 lg:flex">

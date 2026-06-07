@@ -1,8 +1,13 @@
+import type { Metadata } from "next";
 import { BookOpen, FileClock } from "lucide-react";
 import { Badge } from "@/components/content/Badge";
 import { KnowledgeBaseList } from "@/components/content/KnowledgeBaseList";
 import { SectionHeader } from "@/components/content/SectionHeader";
 import { knowledgeBaseCategories } from "@/lib/awgs";
+
+export const metadata: Metadata = {
+  title: "Knowledge Base - Agentic Accessibility Initiative"
+};
 
 export default function KnowledgeBasePage() {
   return (

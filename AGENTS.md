@@ -19,6 +19,10 @@ This repository is the public website for the Agentic Accessibility Initiative.
 - Avoid commercial product language, sales copy, and startup-style positioning.
 - Do not claim formal certification exists unless clearly marked as future work.
 - Keep exploratory future work clearly labeled as exploratory.
+- Treat AWGS 1.0 as a foundation specification, not a full certification scheme.
+- Treat AWGS 1.1 as the expected place for future normative requirements and success criteria.
+- Treat the Agentic Accessibility Manifesto as informative and non-normative.
+- Treat future Agent Capability Manifest work as exploratory unless it is formally drafted and published.
 - Do not duplicate normative AWGS requirements outside the canonical MDX source.
 - When AWGS content changes, update the MDX source first and then update display/search data.
 - Keep guidance and knowledge base content informative unless the standard explicitly makes it normative.

@@ -53,6 +53,9 @@ AWGS should continue to include:
 - Update `content/standard/awgs-1-0-foundation.mdx` first for normative AWGS changes.
 - Update `src/lib/awgs.ts` only to keep cards, search, glossary display, knowledge base metadata, and mock assistant answers aligned.
 - Do not redefine compliance levels, governance domains, glossary terms, or conformance requirements in separate documents.
+- Treat AWGS 1.0 Level A, Level AA, and Level AAA as provisional maturity targets.
+- Expect formal testable conformance criteria in a future AWGS 1.1 Requirements and Success Criteria document.
+- Do not present AWGS 1.0 as a full certification scheme.
 - Keep future standards and future certification programs clearly marked as exploratory until formally drafted and published.
 - Record material decisions in `docs/awgs-decisions.md` and `docs/decision-log.md`.
 
