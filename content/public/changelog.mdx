@@ -1,32 +1,25 @@
-# Change Log
+# AWGS Change Log
 
-This public change log records notable website, repository, and documentation updates. It does not replace the AWGS Version Log or the canonical AWGS Foundation Specification.
+This public change log records changes to the AWGS standard and supporting guidelines. It does not record website implementation, hosting, build, or repository tooling changes.
 
 ## 2026-06-07
 
-### Public Logs and Documentation Consolidation
+### AWGS 1.0 Foundation Specification
 
-- Added this public change log.
-- Added a public version log for AWGS standard and website publication history.
-- Added a repository audit with documentation inventory, source-of-truth mapping, website quality assessment, genuine gaps, and improvement roadmap.
-- Added a decision log for observable and intentional project decisions.
-- Added a website specification covering information architecture, content hierarchy, knowledge base structure, search expectations, accessibility notes, and deployment constraints.
-- Added project context and future-agent instructions for preserving vendor neutrality and canonical content hierarchy.
-- Added RAG assistant architecture documentation for the current mock assistant and future retrieval implementation.
-- Updated the README with a documentation map.
+- Published the AWGS 1.0 Foundation Specification as a Public Draft Standard.
+- Established the AWGS purpose and vision for trustworthy interactions between autonomous agents and digital services.
+- Defined vendor neutrality requirements for AWGS compliance.
+- Defined the AWGS 1.0 scope, including in-scope and out-of-scope system categories.
+- Added eight core principles: discoverability, interoperability, transparency, accountability, trust, privacy, safety, and human oversight.
+- Added nine governance domains: discoverability, interoperability, identity, authorization, transparency, accountability, trust, privacy, and safety.
+- Defined three compliance levels: Level A, Level AA, and Level AAA.
+- Added conformance claim expectations and examples.
+- Added the assessment model covering automated, semi-automated, and manual assessment methods.
+- Added governance requirements for identity, authorization, agent access, privacy, risk, trust, incident handling, audit, and policy management.
+- Added standard governance, versioning, normative content, informative content, glossary, future directions, and conclusion sections.
 
-### Site Publication and Static Hosting
+### Guidelines and Supporting Guidance
 
-- Fixed the homepage hero image path for GitHub Pages repository hosting.
-- Added repository-aware base path and asset prefix handling for static assets.
-- Updated deployment to publish the static export to the `gh-pages` branch from pushes to `main`.
-- Documented that GitHub Pages does not run Next.js API routes and that the chat UI uses static fallback behavior when `/api/chat` is unavailable.
-
-### Initial Documentation Portal
-
-- Created a Next.js, TypeScript, Tailwind CSS, and MDX documentation website for AWGS.
-- Added landing page, standard overview, principles, governance domains, compliance levels, conformance, assessment model, glossary, future roadmap, knowledge base, search, and assistant placeholder pages.
-- Added the AWGS 1.0 Foundation Specification as the canonical MDX source.
-- Added reusable layout, navigation, card, badge, search, and chat components.
-- Added planned knowledge base article structure.
-- Added deterministic mock responses for the RAG assistant placeholder.
+- Added implementation guidance organized around AWGS principles, governance domains, conformance claims, and assessment evidence.
+- Added planned knowledge base topics for agent-ready services, evidence collection, human oversight workflows, and agent identity with delegated authority.
+- Identified future AWGS directions including agent-to-agent governance, multi-agent systems, autonomous transaction governance, identity frameworks, federated trust networks, reputation systems, continuous compliance, and safety certification.

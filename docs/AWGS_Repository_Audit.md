@@ -183,6 +183,7 @@ The following files were created because they improve maintainability and avoid 
 - `docs/rag-assistant-architecture.md`
 - `content/public/changelog.mdx`
 - `content/public/version-log.mdx`
+- `content/public/website-log.mdx`
 
 `README.md` was updated only to point maintainers to the canonical documentation map.
 

@@ -17,6 +17,7 @@ content/
   public/
     changelog.mdx
     version-log.mdx
+    website-log.mdx
   standard/
     awgs-1-0-foundation.mdx
 src/
@@ -101,8 +102,9 @@ Repository-level documentation lives in `docs/`:
 
 Public publication records live in `content/public/` and are rendered on the site:
 
-- `content/public/changelog.mdx` - public change log rendered at `/changelog`.
-- `content/public/version-log.mdx` - public version log rendered at `/versions`.
+- `content/public/changelog.mdx` - AWGS standard and guidelines change log rendered at `/changelog`.
+- `content/public/version-log.mdx` - AWGS standard and guidelines version log rendered at `/versions`.
+- `content/public/website-log.mdx` - website technical log rendered at `/website-log`.
 
 ## Future RAG Implementation
 

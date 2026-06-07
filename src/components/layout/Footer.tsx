@@ -15,6 +15,7 @@ export function Footer() {
             <Link href="/contribute">Contribute</Link>
             <Link href="/changelog">Change Log</Link>
             <Link href="/versions">Versions</Link>
+            <Link href="/website-log">Website Log</Link>
             <Link href="/about">About</Link>
           </nav>
         </div>

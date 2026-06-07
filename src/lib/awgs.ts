@@ -339,15 +339,22 @@ export const searchIndex: SearchItem[] = [
     title: "Change Log",
     href: "/changelog",
     category: "Publication",
-    description: "Public record of notable website, repository, and documentation changes.",
-    keywords: ["changes", "changelog", "updates", "release notes", "publication"]
+    description: "Public record of changes to the AWGS standard and supporting guidelines.",
+    keywords: ["changes", "changelog", "updates", "standard", "guidelines"]
   },
   {
     title: "Version Log",
     href: "/versions",
     category: "Publication",
-    description: "Public record of AWGS standard versions and website publication versions.",
-    keywords: ["versions", "version log", "awgs 1.0", "publication", "history"]
+    description: "Public record of AWGS standard and guideline versions.",
+    keywords: ["versions", "version log", "awgs 1.0", "guidelines", "history"]
+  },
+  {
+    title: "Website Technical Log",
+    href: "/website-log",
+    category: "Publication",
+    description: "Technical record of website implementation, repository, hosting, and tooling changes.",
+    keywords: ["website", "technical log", "hosting", "deployment", "repository"]
   }
 ];
 

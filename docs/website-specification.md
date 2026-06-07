@@ -33,6 +33,7 @@ Utility routes:
 - Assistant: `/assistant`
 - Change Log: `/changelog`
 - Version Log: `/versions`
+- Website Technical Log: `/website-log`
 
 Standard sidebar:
 
@@ -56,8 +57,9 @@ Standard sidebar:
 | Navigation | `src/lib/navigation.ts` | Top navigation and standard sidebar route list. |
 | Knowledge base placeholders | `src/lib/awgs.ts`; `src/app/knowledge-base/*` | Planned article metadata and placeholder article outline routes. |
 | RAG assistant UI and mock route | `src/components/chat/ChatPanel.tsx`; `src/app/api/chat/route.ts` | Placeholder assistant interface and local/server mock endpoint. |
-| Public change log | `content/public/changelog.mdx`; `src/app/changelog/page.tsx` | Public record of website, repository, and documentation changes. |
-| Public version log | `content/public/version-log.mdx`; `src/app/versions/page.tsx` | Public record of AWGS standard versions and website publication versions. |
+| Public AWGS change log | `content/public/changelog.mdx`; `src/app/changelog/page.tsx` | Public record of AWGS standard and guideline changes. |
+| Public AWGS version log | `content/public/version-log.mdx`; `src/app/versions/page.tsx` | Public record of AWGS standard and guideline versions. |
+| Website technical log | `content/public/website-log.mdx`; `src/app/website-log/page.tsx` | Technical record of website implementation, repository, hosting, and tooling changes. |
 
 ## Source-of-Truth Policy
 
