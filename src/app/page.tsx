@@ -9,6 +9,9 @@ import { SearchInput } from "@/components/search/SearchInput";
 import { ChatPanel } from "@/components/chat/ChatPanel";
 import { principles } from "@/lib/awgs";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+const heroImageSrc = `${basePath}/awgs-governance-map.png`;
+
 export default function HomePage() {
   return (
     <div>
@@ -48,7 +51,7 @@ export default function HomePage() {
           </div>
           <div className="relative min-h-[300px] overflow-hidden rounded-lg border border-slate-200 bg-slate-50 shadow-soft lg:min-h-[460px]">
             <Image
-              src="/awgs-governance-map.png"
+              src={heroImageSrc}
               alt="Abstract governance map showing standards, safeguards, identity, privacy, audit, and oversight connections."
               fill
               priority
