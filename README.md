@@ -62,8 +62,9 @@ This project includes a GitHub Actions workflow at `.github/workflows/deploy-pag
 
 1. Create a GitHub repository for the site.
 2. Push this project to the repository's `main` branch.
-3. In GitHub, open the repository settings and enable Pages with **Source: GitHub Actions**.
-4. The workflow will build the static site and deploy it to GitHub Pages.
+3. In GitHub, open the repository settings and enable Pages with **Source: Deploy from a branch**.
+4. Select the `gh-pages` branch and the repository root.
+5. The workflow will build the static site and update the `gh-pages` branch on future pushes.
 
 For a repository named `awgs-docs-site`, the site will be published under a URL like:
 
