@@ -36,7 +36,7 @@ This repository contains the public website for the Agentic Accessibility Initia
 - Do not introduce references to private frameworks, private products, or organization-specific dependencies in AWGS content.
 - Do not add unsupported origin, authorship, certification, or governance claims.
 - Avoid marketing language.
-- Keep future standards and future certification programs clearly marked as exploratory until published.
+- Keep future standards clearly marked as exploratory until published. If certification or assurance is ever considered, keep it separate from current AWGS 1.0 maturity target statements.
 - Keep the Agentic Accessibility Manifesto informative and non-normative.
 - Keep AWGS 1.0 conformance language provisional until AWGS 1.1 requirements and success criteria exist.
 - Avoid duplicating normative text outside the canonical MDX specification.
@@ -44,6 +44,21 @@ This repository contains the public website for the Agentic Accessibility Initia
 - Keep `src/lib/awgs.ts` aligned with the MDX source until a generated data pipeline exists.
 - Record significant architecture, publication, source-of-truth, or governance decisions in `docs/decision-log.md`.
 - Treat knowledge base content as informative guidance unless the standard explicitly makes it normative.
+
+## Current Phase Scope Control
+
+This phase is limited to cleanup, consolidation, and consistency. Future-stage concepts may be mentioned only as exploratory or planned work.
+
+Do not implement the following without an explicit new request:
+
+- AWGS 1.1 normative requirements.
+- Certification programs or compliance badges.
+- Formal audit workflows or validator tools.
+- Real RAG/vector search.
+- Agent Capability Manifest requirements.
+- Mandatory `agents.json`.
+- Legal compliance claims.
+- Commercial product flows.
 
 ## Static Hosting Constraints
 

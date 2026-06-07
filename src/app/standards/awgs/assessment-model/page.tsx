@@ -1,1 +1,1 @@
-export { default } from "@/app/standard/assessment-model/page";
+export { default, metadata } from "@/app/standard/assessment-model/page";

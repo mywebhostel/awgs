@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, FileText } from "lucide-react";
 import { Badge } from "@/components/content/Badge";
@@ -5,6 +6,10 @@ import { Card } from "@/components/content/Card";
 import { ComplianceComparison } from "@/components/content/ComplianceComparison";
 import { SectionHeader } from "@/components/content/SectionHeader";
 import { governanceRequirements } from "@/lib/awgs";
+
+export const metadata: Metadata = {
+  title: "AWGS 1.0 Standard Overview"
+};
 
 export default function StandardPage() {
   return (
@@ -19,7 +24,7 @@ export default function StandardPage() {
         <Card>
           <Badge tone="blue">Purpose</Badge>
           <p className="mt-4 text-sm leading-6 text-slate-600">
-            AWGS promotes safe and responsible agent interactions, improves interoperability, increases transparency and accountability, supports trust and provenance, encourages privacy-preserving practices, and establishes measurable compliance criteria.
+            AWGS promotes safe and responsible agent interactions, improves interoperability, increases transparency and accountability, supports trust and provenance, encourages privacy-preserving practices, and lays groundwork for future measurable conformance criteria.
           </p>
         </Card>
         <Card>

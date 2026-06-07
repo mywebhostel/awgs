@@ -1,1 +1,1 @@
-export { default } from "@/app/standard/governance-domains/page";
+export { default, metadata } from "@/app/standard/governance-domains/page";

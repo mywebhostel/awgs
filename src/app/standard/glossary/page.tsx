@@ -1,5 +1,10 @@
+import type { Metadata } from "next";
 import { SectionHeader } from "@/components/content/SectionHeader";
 import { glossary } from "@/lib/awgs";
+
+export const metadata: Metadata = {
+  title: "AWGS 1.0 Glossary"
+};
 
 export default function GlossaryPage() {
   return (

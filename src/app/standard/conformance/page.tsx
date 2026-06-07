@@ -1,13 +1,18 @@
+import type { Metadata } from "next";
 import { CheckCircle2 } from "lucide-react";
 import { Badge } from "@/components/content/Badge";
 import { Card } from "@/components/content/Card";
 import { SectionHeader } from "@/components/content/SectionHeader";
 
+export const metadata: Metadata = {
+  title: "AWGS 1.0 Conformance Status"
+};
+
 const conformanceCriteria = [
-  "Mandatory requirements are satisfied.",
-  "Required governance controls are operational.",
-  "Required documentation exists.",
-  "Compliance is maintained during the claim period."
+  "Relevant foundation guidance has been mapped.",
+  "Governance controls have been identified for the selected maturity target.",
+  "Supporting documentation is available for review.",
+  "Maintenance responsibilities are documented for the target period."
 ];
 
 const claimExamples = ["AWGS Level A", "AWGS Level AA", "AWGS Level AAA"];

@@ -1,7 +1,12 @@
+import type { Metadata } from "next";
 import { GitPullRequest, MessagesSquare, ScrollText } from "lucide-react";
 import { Badge } from "@/components/content/Badge";
 import { Card } from "@/components/content/Card";
 import { SectionHeader } from "@/components/content/SectionHeader";
+
+export const metadata: Metadata = {
+  title: "Contribute"
+};
 
 const contributionPaths = [
   {
@@ -11,7 +16,8 @@ const contributionPaths = [
   },
   {
     title: "Standard review",
-    description: "Review AWGS domains, compliance maturity targets, conformance language, glossary terms, and future AWGS 1.1 requirements.",
+    description:
+      "Review AWGS domains, compliance maturity targets, conformance language, glossary terms, and exploratory future requirements planning.",
     icon: GitPullRequest
   },
   {
@@ -27,7 +33,7 @@ const contributionAreas = [
   "Glossary improvements",
   "Knowledge base articles",
   "Research notes",
-  "Future AWGS 1.1 requirements",
+  "Exploratory future requirements planning",
   "Public review process"
 ];
 

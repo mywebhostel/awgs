@@ -1,4 +1,9 @@
+import type { Metadata } from "next";
 import VersionLog from "@content/public/version-log.mdx";
+
+export const metadata: Metadata = {
+  title: "Public Version Log"
+};
 
 export default function VersionsPage() {
   return (

@@ -16,10 +16,11 @@ This file records decisions about Agentic Accessibility, AWGS positioning, and p
 | 2026-06-07 | Add primary version-ready AWGS routes under `/standards/awgs/*` while retaining legacy `/standard/*` routes. | Active | Supports the broader initiative architecture without breaking existing links. |
 | 2026-06-07 | Label future standard areas as exploratory until drafted, reviewed, and published. | Active | Avoids implying finalized requirements or formal certification programs. |
 | 2026-06-07 | Keep AWGS change and version logs focused on standard and guideline history only. | Active | Separates public standard history from website implementation history. |
+| 2026-06-07 | Preserve the AWGS 1.0 foundation-specification scope during the current cleanup phase. | Active | Prevents cleanup work from introducing AWGS 1.1 requirements, certification schemes, validators, real RAG implementation, or future manifest requirements. |
 
 ## Open Decisions
 
 - Define the public review process for AWGS 1.0 finalization.
 - Define versioned archive routes for future AWGS 1.1 and later versions.
 - Define whether future Agent Capability Manifest, Agent Identity Profile, Agent Trust Metadata, and governance profile work become separate standards or AWGS extensions.
-- Define any future certification or assurance program separately from current AWGS conformance claims.
+- If certification or assurance is ever considered, define it separately from current AWGS 1.0 maturity target statements.

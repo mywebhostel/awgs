@@ -1,6 +1,11 @@
+import type { Metadata } from "next";
 import { Badge } from "@/components/content/Badge";
 import { Card } from "@/components/content/Card";
 import { SectionHeader } from "@/components/content/SectionHeader";
+
+export const metadata: Metadata = {
+  title: "About"
+};
 
 export default function AboutPage() {
   return (

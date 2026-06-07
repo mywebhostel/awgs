@@ -299,7 +299,7 @@ export const futureStandardAreas: FutureStandardArea[] = [
   {
     title: "Continuous Compliance Models",
     status: "Exploratory / Future Work",
-    description: "Future approaches for monitoring compliance signals, evidence freshness, and conformance claims over time."
+    description: "Future approaches for monitoring compliance signals, evidence freshness, and maturity evidence over time."
   }
 ];
 

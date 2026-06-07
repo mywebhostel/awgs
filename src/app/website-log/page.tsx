@@ -1,4 +1,9 @@
+import type { Metadata } from "next";
 import WebsiteLog from "@content/public/website-log.mdx";
+
+export const metadata: Metadata = {
+  title: "Website Log"
+};
 
 export default function WebsiteLogPage() {
   return (

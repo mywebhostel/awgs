@@ -1,4 +1,9 @@
+import type { Metadata } from "next";
 import ChangeLog from "@content/public/changelog.mdx";
+
+export const metadata: Metadata = {
+  title: "AWGS Change Log"
+};
 
 export default function ChangeLogPage() {
   return (

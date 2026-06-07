@@ -1,4 +1,9 @@
+import type { Metadata } from "next";
 import FullSpec from "@content/standard/awgs-1-0-foundation.mdx";
+
+export const metadata: Metadata = {
+  title: "AWGS 1.0 Foundation Specification"
+};
 
 export default function FullSpecPage() {
   return (

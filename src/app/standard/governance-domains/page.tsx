@@ -1,5 +1,10 @@
+import type { Metadata } from "next";
 import { DomainGrid } from "@/components/content/DomainGrid";
 import { SectionHeader } from "@/components/content/SectionHeader";
+
+export const metadata: Metadata = {
+  title: "AWGS 1.0 Governance Domains"
+};
 
 export default function GovernanceDomainsPage() {
   return (

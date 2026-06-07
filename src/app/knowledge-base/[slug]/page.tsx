@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft } from "lucide-react";
@@ -14,6 +15,15 @@ function slugFromHref(href: string) {
 
 export function generateStaticParams() {
   return knowledgeBaseArticles.map((article) => ({ slug: slugFromHref(article.href) }));
+}
+
+export async function generateMetadata({ params }: KnowledgeBaseArticlePageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const article = knowledgeBaseArticles.find((item) => slugFromHref(item.href) === slug);
+
+  return {
+    title: article ? `${article.title} - Knowledge Base` : "Knowledge Base"
+  };
 }
 
 export default async function KnowledgeBaseArticlePage({ params }: KnowledgeBaseArticlePageProps) {

@@ -1,7 +1,12 @@
+import type { Metadata } from "next";
 import { Badge } from "@/components/content/Badge";
 import { Card } from "@/components/content/Card";
 import { SectionHeader } from "@/components/content/SectionHeader";
 import { assessmentMethods } from "@/lib/awgs";
+
+export const metadata: Metadata = {
+  title: "AWGS 1.0 Assessment Model"
+};
 
 export default function AssessmentModelPage() {
   return (
@@ -9,7 +14,7 @@ export default function AssessmentModelPage() {
       <SectionHeader
         eyebrow="Assessment"
         title="Assessment Model"
-        description="AWGS assessments may combine automated checks, semi-automated reviews, and manual assessment of operational governance practices."
+        description="AWGS 1.0 assessment planning may combine automated checks, semi-automated reviews, and manual review of operational governance practices."
       />
 
       <div className="grid gap-4">

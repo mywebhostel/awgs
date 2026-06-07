@@ -1,5 +1,10 @@
+import type { Metadata } from "next";
 import { PrinciplesGrid } from "@/components/content/PrinciplesGrid";
 import { SectionHeader } from "@/components/content/SectionHeader";
+
+export const metadata: Metadata = {
+  title: "AWGS 1.0 Principles"
+};
 
 export default function PrinciplesPage() {
   return (

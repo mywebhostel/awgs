@@ -1,1 +1,1 @@
-export { default } from "@/app/standard/compliance-levels/page";
+export { default, metadata } from "@/app/standard/compliance-levels/page";

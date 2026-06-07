@@ -216,5 +216,5 @@ The following files were created because they improve maintainability and avoid 
 - Expand the knowledge base into implementation guides, assessment playbooks, evidence examples, and public review notes.
 - Implement the RAG assistant with source chunking, stable citations, retrieval evaluation, and out-of-scope safeguards.
 - Create a versioning and archival model for public draft, final, superseded, and withdrawn versions.
-- Define a future certification program model separately from conformance claims, with clear criteria, evidence handling, and governance review.
+- If certification or assurance is ever considered, define the model separately from current AWGS 1.0 maturity target statements, with clear criteria, evidence handling, and governance review.
 - Publish a maintenance model that identifies roles for editors, reviewers, contributors, and standard stewards.

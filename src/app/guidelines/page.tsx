@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, ShieldCheck } from "lucide-react";
 import { Badge } from "@/components/content/Badge";
@@ -6,13 +7,17 @@ import { DomainGrid } from "@/components/content/DomainGrid";
 import { PrinciplesGrid } from "@/components/content/PrinciplesGrid";
 import { SectionHeader } from "@/components/content/SectionHeader";
 
+export const metadata: Metadata = {
+  title: "Guidelines"
+};
+
 export default function GuidelinesPage() {
   return (
     <div className="mx-auto max-w-7xl space-y-12 px-4 py-10 sm:px-6 lg:px-8">
       <SectionHeader
         eyebrow="Guidelines"
         title="Implementation Guidance"
-        description="Guidance connects the Agentic Accessibility vision to AWGS 1.0 principles, governance domains, conformance claims, and assessment evidence."
+        description="Guidance connects the Agentic Accessibility vision to AWGS 1.0 principles, governance domains, maturity targets, and assessment considerations."
       />
 
       <section className="grid gap-4 md:grid-cols-3">
@@ -34,7 +39,7 @@ export default function GuidelinesPage() {
           <ShieldCheck className="h-6 w-6 text-standard-amber" aria-hidden="true" />
           <h2 className="mt-4 text-xl font-semibold tracking-normal text-ink">Select a compliance level</h2>
           <p className="mt-3 text-sm leading-6 text-slate-600">
-            Claim Level A, AA, or AAA only when the corresponding requirements, controls, documentation, and maintenance commitments are satisfied.
+            Use Level A, AA, or AAA as maturity targets while avoiding certification claims until formal testable criteria exist.
           </p>
         </Card>
       </section>

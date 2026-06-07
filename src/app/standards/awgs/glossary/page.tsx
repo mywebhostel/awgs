@@ -1,1 +1,1 @@
-export { default } from "@/app/standard/glossary/page";
+export { default, metadata } from "@/app/standard/glossary/page";

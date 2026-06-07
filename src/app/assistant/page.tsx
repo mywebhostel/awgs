@@ -1,5 +1,10 @@
+import type { Metadata } from "next";
 import { ChatPanel } from "@/components/chat/ChatPanel";
 import { SectionHeader } from "@/components/content/SectionHeader";
+
+export const metadata: Metadata = {
+  title: "Initiative Chat Assistant"
+};
 
 export default function AssistantPage() {
   return (

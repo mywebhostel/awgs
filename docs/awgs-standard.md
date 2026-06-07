@@ -56,7 +56,7 @@ AWGS should continue to include:
 - Treat AWGS 1.0 Level A, Level AA, and Level AAA as provisional maturity targets.
 - Expect formal testable conformance criteria in a future AWGS 1.1 Requirements and Success Criteria document.
 - Do not present AWGS 1.0 as a full certification scheme.
-- Keep future standards and future certification programs clearly marked as exploratory until formally drafted and published.
+- Keep future standards exploratory until formally drafted and published. If certification or assurance is ever considered, keep it separate from current AWGS 1.0 maturity target statements.
 - Record material decisions in `docs/awgs-decisions.md` and `docs/decision-log.md`.
 
 ## Current Primary Routes

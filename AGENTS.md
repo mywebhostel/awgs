@@ -17,7 +17,7 @@ This repository is the public website for the Agentic Accessibility Initiative.
 - Preserve vendor neutrality.
 - Do not reference private framework or product names from earlier drafts.
 - Avoid commercial product language, sales copy, and startup-style positioning.
-- Do not claim formal certification exists unless clearly marked as future work.
+- Do not claim formal certification exists.
 - Keep exploratory future work clearly labeled as exploratory.
 - Treat AWGS 1.0 as a foundation specification, not a full certification scheme.
 - Treat AWGS 1.1 as the expected place for future normative requirements and success criteria.
@@ -26,6 +26,14 @@ This repository is the public website for the Agentic Accessibility Initiative.
 - Do not duplicate normative AWGS requirements outside the canonical MDX source.
 - When AWGS content changes, update the MDX source first and then update display/search data.
 - Keep guidance and knowledge base content informative unless the standard explicitly makes it normative.
+
+## Current Phase Scope Control
+
+- Treat the current phase as cleanup, consolidation, and consistency work.
+- Prioritize initiative framing, AWGS positioning, navigation, routes, footer, metadata, knowledge base structure, manifesto status, conformance wording, documentation, decision logs, and GitHub Pages compatibility.
+- Do not implement AWGS 1.1 normative requirements, certification programs, compliance badges, formal audit workflows, validator tools, real RAG/vector search, Agent Capability Manifest requirements, mandatory `agents.json`, legal compliance claims, or commercial product flows unless explicitly requested.
+- Mention future-stage concepts only as exploratory or planned work.
+- When uncertain, preserve the AWGS 1.0 Foundation Specification scope.
 
 ## Implementation Rules
 

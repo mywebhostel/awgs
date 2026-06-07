@@ -1,5 +1,10 @@
+import type { Metadata } from "next";
 import { SearchInput } from "@/components/search/SearchInput";
 import { SectionHeader } from "@/components/content/SectionHeader";
+
+export const metadata: Metadata = {
+  title: "Search"
+};
 
 export default function SearchPage() {
   return (

@@ -1,7 +1,12 @@
+import type { Metadata } from "next";
 import { Badge } from "@/components/content/Badge";
 import { Card } from "@/components/content/Card";
 import { SectionHeader } from "@/components/content/SectionHeader";
 import { futureStandardAreas } from "@/lib/awgs";
+
+export const metadata: Metadata = {
+  title: "Exploratory Future Work"
+};
 
 export default function FutureWorkPage() {
   return (

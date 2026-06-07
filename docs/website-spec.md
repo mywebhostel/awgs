@@ -103,6 +103,14 @@ Required homepage sections:
 - Public AWGS version log: `content/public/version-log.mdx`.
 - Website technical log: `content/public/website-log.mdx`.
 
+## Current Phase Scope
+
+This phase is a cleanup, consolidation, and consistency phase. It should preserve the AWGS 1.0 Foundation Specification scope.
+
+Priorities are consistent Agentic Accessibility Initiative framing, AWGS 1.0 positioning, navigation cleanup, route consolidation, footer and metadata consistency, knowledge base structure, manifesto status, conformance wording, documentation, decision logs, and GitHub Pages compatibility.
+
+Do not implement AWGS 1.1 normative requirements, certification programs, compliance badges, formal audit workflows, validator tools, real RAG/vector search, Agent Capability Manifest requirements, mandatory `agents.json`, legal compliance claims, or commercial product flows unless explicitly requested.
+
 ## Knowledge Base Categories
 
 The knowledge base should prepare categories for:
@@ -134,7 +142,7 @@ The current assistant is a mock placeholder. It may answer deterministic questio
 - Glossary
 - Research
 - Future work
-- Future requirements
+- Exploratory future requirements planning
 
 Future RAG pipeline:
 
@@ -148,7 +156,8 @@ Do not claim real vector search exists until implemented and deployed.
 
 - Neutral public standard visual language.
 - No commercial product framing.
-- No formal certification claims unless clearly marked as future work.
+- No formal certification claims.
+- Any future certification discussion must remain exploratory until separately drafted and approved.
 - AWGS 1.0 conformance levels should be presented as maturity targets until AWGS 1.1 requirements exist.
 - Responsive layout.
 - Accessible navigation, forms, focus states, and semantic landmarks.

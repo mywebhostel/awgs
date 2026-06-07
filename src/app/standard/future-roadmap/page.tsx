@@ -1,7 +1,12 @@
+import type { Metadata } from "next";
 import { ArrowRight } from "lucide-react";
 import { Badge } from "@/components/content/Badge";
 import { SectionHeader } from "@/components/content/SectionHeader";
 import { roadmapItems } from "@/lib/awgs";
+
+export const metadata: Metadata = {
+  title: "AWGS Future Roadmap"
+};
 
 export default function FutureRoadmapPage() {
   return (

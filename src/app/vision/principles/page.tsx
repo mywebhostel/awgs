@@ -1,7 +1,12 @@
+import type { Metadata } from "next";
 import { Badge } from "@/components/content/Badge";
 import { Card } from "@/components/content/Card";
 import { SectionHeader } from "@/components/content/SectionHeader";
 import { agenticAccessibilityPrinciples } from "@/lib/awgs";
+
+export const metadata: Metadata = {
+  title: "Agentic Accessibility Principles"
+};
 
 export default function VisionPrinciplesPage() {
   return (

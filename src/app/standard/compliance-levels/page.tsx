@@ -1,5 +1,10 @@
+import type { Metadata } from "next";
 import { ComplianceComparison } from "@/components/content/ComplianceComparison";
 import { SectionHeader } from "@/components/content/SectionHeader";
+
+export const metadata: Metadata = {
+  title: "AWGS 1.0 Compliance Levels"
+};
 
 export default function ComplianceLevelsPage() {
   return (

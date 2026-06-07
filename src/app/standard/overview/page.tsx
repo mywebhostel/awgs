@@ -1,6 +1,11 @@
+import type { Metadata } from "next";
 import { Badge } from "@/components/content/Badge";
 import { Card } from "@/components/content/Card";
 import { SectionHeader } from "@/components/content/SectionHeader";
+
+export const metadata: Metadata = {
+  title: "AWGS 1.0 Overview"
+};
 
 export default function OverviewPage() {
   return (
@@ -19,7 +24,7 @@ export default function OverviewPage() {
             <li>Improve interoperability across agent ecosystems.</li>
             <li>Increase transparency and accountability.</li>
             <li>Support trust, provenance, and privacy-preserving practices.</li>
-            <li>Establish measurable compliance criteria.</li>
+            <li>Provide a foundation for future measurable conformance criteria.</li>
           </ul>
         </Card>
         <Card>

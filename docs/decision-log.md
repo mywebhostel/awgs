@@ -19,6 +19,7 @@ This log records project decisions that can be observed from the repository and 
 | 2026-06-07 | Add the Agentic Accessibility Manifesto as an informative, non-normative vision document. | Active | `src/app/vision/manifesto/page.tsx`; `docs/agentic-accessibility-vision.md` | Provides a value statement without creating technical requirements, certification, or legal obligations. |
 | 2026-06-07 | Clarify AWGS 1.0 conformance as provisional maturity targets until AWGS 1.1 requirements exist. | Active | `src/app/standard/conformance/page.tsx`; `src/components/content/ComplianceComparison.tsx` | Prevents Level A, Level AA, and Level AAA from being mistaken for independently certified claims. |
 | 2026-06-07 | Keep Agent Capability Manifest work exploratory. | Active | `src/app/standards/future-work/page.tsx`; `src/lib/awgs.ts` | Avoids presenting future capability manifest work as a finalized standard. |
+| 2026-06-07 | Keep the current phase limited to cleanup, consolidation, and consistency. | Active | `AGENTS.md`; `docs/project-context.md`; `docs/website-spec.md` | Prevents the initiative refactor from expanding into AWGS 1.1 requirements, certification, validators, real RAG, or other future-stage implementation work. |
 
 ## Open Decisions
 
@@ -26,4 +27,4 @@ This log records project decisions that can be observed from the repository and 
 - Define contributor roles, review stages, and approval requirements for public standard updates.
 - Decide whether structured UI data should be generated from MDX or maintained manually with explicit drift checks.
 - Define the RAG assistant deployment model for a static GitHub Pages site.
-- Define whether future certification material belongs in the standard, the knowledge base, or a separate program document.
+- If certification is ever considered, define whether exploratory certification material belongs in the standard, the knowledge base, or a separate program document.
