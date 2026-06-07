@@ -1,0 +1,32 @@
+# Change Log
+
+This public change log records notable website, repository, and documentation updates. It does not replace the AWGS Version Log or the canonical AWGS Foundation Specification.
+
+## 2026-06-07
+
+### Public Logs and Documentation Consolidation
+
+- Added this public change log.
+- Added a public version log for AWGS standard and website publication history.
+- Added a repository audit with documentation inventory, source-of-truth mapping, website quality assessment, genuine gaps, and improvement roadmap.
+- Added a decision log for observable and intentional project decisions.
+- Added a website specification covering information architecture, content hierarchy, knowledge base structure, search expectations, accessibility notes, and deployment constraints.
+- Added project context and future-agent instructions for preserving vendor neutrality and canonical content hierarchy.
+- Added RAG assistant architecture documentation for the current mock assistant and future retrieval implementation.
+- Updated the README with a documentation map.
+
+### Site Publication and Static Hosting
+
+- Fixed the homepage hero image path for GitHub Pages repository hosting.
+- Added repository-aware base path and asset prefix handling for static assets.
+- Updated deployment to publish the static export to the `gh-pages` branch from pushes to `main`.
+- Documented that GitHub Pages does not run Next.js API routes and that the chat UI uses static fallback behavior when `/api/chat` is unavailable.
+
+### Initial Documentation Portal
+
+- Created a Next.js, TypeScript, Tailwind CSS, and MDX documentation website for AWGS.
+- Added landing page, standard overview, principles, governance domains, compliance levels, conformance, assessment model, glossary, future roadmap, knowledge base, search, and assistant placeholder pages.
+- Added the AWGS 1.0 Foundation Specification as the canonical MDX source.
+- Added reusable layout, navigation, card, badge, search, and chat components.
+- Added planned knowledge base article structure.
+- Added deterministic mock responses for the RAG assistant placeholder.

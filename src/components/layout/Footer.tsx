@@ -13,6 +13,8 @@ export function Footer() {
             <Link href="/standard">Standard</Link>
             <Link href="/knowledge-base">Knowledge Base</Link>
             <Link href="/contribute">Contribute</Link>
+            <Link href="/changelog">Change Log</Link>
+            <Link href="/versions">Versions</Link>
             <Link href="/about">About</Link>
           </nav>
         </div>

@@ -334,6 +334,20 @@ export const searchIndex: SearchItem[] = [
     category: "Tools",
     description: "Placeholder chat interface for future retrieval-augmented AWGS assistance.",
     keywords: ["chat", "rag", "assistant", "mock"]
+  },
+  {
+    title: "Change Log",
+    href: "/changelog",
+    category: "Publication",
+    description: "Public record of notable website, repository, and documentation changes.",
+    keywords: ["changes", "changelog", "updates", "release notes", "publication"]
+  },
+  {
+    title: "Version Log",
+    href: "/versions",
+    category: "Publication",
+    description: "Public record of AWGS standard versions and website publication versions.",
+    keywords: ["versions", "version log", "awgs 1.0", "publication", "history"]
   }
 ];
 

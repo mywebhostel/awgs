@@ -14,6 +14,9 @@ Modern documentation website for the Agentic Web Governance Standard (AWGS) 1.0 
 
 ```text
 content/
+  public/
+    changelog.mdx
+    version-log.mdx
   standard/
     awgs-1-0-foundation.mdx
 src/
@@ -85,6 +88,21 @@ GitHub Pages does not run Next.js API routes. The `/api/chat` route remains avai
 The full AWGS source document is stored at `content/standard/awgs-1-0-foundation.mdx` and rendered on `/standard/full`.
 
 Structured section pages use the same specification vocabulary through `src/lib/awgs.ts`, which keeps principles, domains, compliance levels, glossary terms, roadmap items, knowledge base placeholders, and the local search index in one place.
+
+## Documentation Map
+
+Repository-level documentation lives in `docs/`:
+
+- `docs/AWGS_Repository_Audit.md` - repository audit, source-of-truth map, gaps, and improvement roadmap.
+- `docs/website-specification.md` - website information architecture, content hierarchy, knowledge base structure, search expectations, accessibility notes, and deployment constraints.
+- `docs/project-context.md` - maintainer and future-agent instructions for preserving vendor neutrality and the canonical content hierarchy.
+- `docs/rag-assistant-architecture.md` - current mock assistant behavior and future retrieval architecture.
+- `docs/decision-log.md` - observed and intentional project decisions.
+
+Public publication records live in `content/public/` and are rendered on the site:
+
+- `content/public/changelog.mdx` - public change log rendered at `/changelog`.
+- `content/public/version-log.mdx` - public version log rendered at `/versions`.
 
 ## Future RAG Implementation
 
