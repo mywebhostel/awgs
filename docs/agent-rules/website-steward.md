@@ -1,3 +1,10 @@
+---
+name: website-steward
+version: 0.1.0
+status: active
+scope: website-maintenance
+---
+
 # Agentic Website Steward
 
 ## Purpose
@@ -7,6 +14,8 @@ Use these rules when maintaining the public website for the Agentic Accessibilit
 This steward protects presentation, navigation, accessibility, deployment, consistency, and user experience.
 
 The website should present the standard clearly without changing its meaning.
+
+This is a living steward document. Update it through `docs/agent-rules/maintenance-protocol.md` when website architecture, routing, navigation, public positioning, deployment constraints, or recurring agent mistakes require durable rule changes.
 
 ## Use This Steward For
 
@@ -19,6 +28,8 @@ The website should present the standard clearly without changing its meaning.
 - Mobile responsiveness.
 - Accessibility improvements.
 - Knowledge base structure.
+- Glossary presentation.
+- Research pages.
 - Search behavior.
 - Mock RAG assistant UI.
 - GitHub Pages deployment.

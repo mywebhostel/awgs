@@ -1,3 +1,10 @@
+---
+name: standard-steward
+version: 0.1.0
+status: active
+scope: standard-content
+---
+
 # Agentic Standard Steward
 
 ## Purpose
@@ -5,6 +12,8 @@
 Use these rules when maintaining Agentic Accessibility vision documents, AWGS standard content, compliance levels, governance domains, glossary terms, conformance language, future roadmap, or standard-related documentation.
 
 This steward protects the meaning, neutrality, maturity, and credibility of the standard.
+
+This is a living steward document. Update it through `docs/agent-rules/maintenance-protocol.md` when project decisions, maturity boundaries, document types, or recurring agent mistakes require durable rule changes.
 
 ## Use this steward for
 
@@ -37,6 +46,8 @@ Do not present AWGS as the entire initiative.
 Do not reference private frameworks, commercial products, proprietary platforms, or private legacy names from earlier drafts.
 
 Do not imply that any specific company owns, controls, or certifies AWGS.
+
+Do not introduce vendor or product dependencies into AWGS meaning, examples, conformance language, or future-work descriptions.
 
 ### 3. Protect AWGS 1.0 Maturity Boundaries
 
@@ -121,6 +132,8 @@ It is acceptable to explain that Agentic Accessibility is conceptually inspired 
 Do not claim that current accessibility laws require agentic access.
 
 Do not claim that AWGS satisfies any law.
+
+Do not present AWGS as legally compliant, legally required, or sufficient for legal compliance.
 
 ### 8. Maintain Glossary Consistency
 

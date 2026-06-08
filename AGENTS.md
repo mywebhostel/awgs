@@ -14,6 +14,23 @@ This repository is the public website for the Agentic Accessibility Initiative.
 - Use `docs/agent-rules/standard-steward.md` when maintaining Agentic Accessibility vision content, AWGS standard content, conformance language, compliance levels, governance domains, glossary terms, decision logs, or standard-related documentation.
 - Use `docs/agent-rules/website-steward.md` when maintaining website routes, navigation, footer, metadata, search, assistant UI, accessibility, layout, MDX rendering, or GitHub Pages deployment.
 - If a website change alters standard meaning, apply both steward documents.
+- Use `docs/agent-rules/maintenance-protocol.md` when steward rules need to evolve.
+- Record steward rule changes in `docs/agent-rules/steward-changelog.md`.
+- Track unresolved steward-rule future work in `docs/agent-rules/steward-backlog.md`.
+
+## Steward Maintenance
+
+- The Standard Steward and Website Steward are living project rules.
+- Review steward rules when project scope, standard maturity, website architecture, conformance language, or public positioning changes.
+- Do not update steward rules casually.
+- Update steward rules when a new rule prevents repeated mistakes, reflects an accepted decision, clarifies current scope, removes outdated guidance, or improves future consistency.
+- Do not create more than two main steward rule sets unless the user explicitly changes the governance model.
+- Related files:
+  - `docs/agent-rules/standard-steward.md`
+  - `docs/agent-rules/website-steward.md`
+  - `docs/agent-rules/maintenance-protocol.md`
+  - `docs/agent-rules/steward-changelog.md`
+  - `docs/agent-rules/steward-backlog.md`
 
 ## Source-of-Truth Rules
 
