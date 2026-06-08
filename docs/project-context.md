@@ -15,18 +15,19 @@ This repository contains the public website for the Agentic Accessibility Initia
 - Hosting target: static GitHub Pages export.
 - Primary vision source: `docs/agentic-accessibility-vision.md`.
 - Primary standard source: `content/standard/awgs-1-0-foundation.mdx`.
-- Mock assistant: `src/components/chat/ChatPanel.tsx`, `src/app/api/chat/route.ts`, and `src/lib/awgs.ts` `answerFromAwgs`.
+- Static retrieval assistant: `src/components/chat/ChatPanel.tsx`, `src/app/api/chat/route.ts`, and `src/lib/rag.ts` `answerFromAwgs`.
 
 ## Canonical Source Hierarchy
 
 1. `docs/agentic-accessibility-vision.md` is the canonical source for the broader initiative vision.
 2. `content/standard/awgs-1-0-foundation.mdx` is the canonical source for AWGS 1.0 standard content.
 3. `docs/awgs-standard.md` defines AWGS source-of-truth handling.
-4. `src/lib/awgs.ts` contains structured presentation, search, planned article, and mock assistant data.
-5. `docs/website-spec.md` defines website information architecture and content structure.
-6. `docs/rag-assistant-architecture.md` defines the future assistant architecture.
-7. `docs/awgs-decisions.md` and `docs/decision-log.md` record project decisions.
-8. `README.md` remains the setup, local running, and publishing entry point.
+4. `src/lib/awgs.ts` contains structured presentation, search, and planned article data.
+5. `src/lib/rag.ts` contains the current static retrieval corpus and answer logic.
+6. `docs/website-spec.md` defines website information architecture and content structure.
+7. `docs/rag-assistant-architecture.md` defines current assistant behavior and future retrieval architecture.
+8. `docs/awgs-decisions.md` and `docs/decision-log.md` record project decisions.
+9. `README.md` remains the setup, local running, and publishing entry point.
 
 ## Editing Instructions
 
@@ -54,7 +55,7 @@ Do not implement the following without an explicit new request:
 - AWGS 1.1 normative requirements.
 - Certification programs or compliance badges.
 - Formal audit workflows or validator tools.
-- Real RAG/vector search.
+- Vector search or model-backed RAG.
 - Agent Capability Manifest requirements.
 - Mandatory `agents.json`.
 - Legal compliance claims.
@@ -66,12 +67,12 @@ The website is configured for GitHub Pages static export. This means:
 
 - Pages and assets must work without a Node.js server at runtime.
 - Next.js API routes are not executed by GitHub Pages.
-- The chat UI must remain usable with static fallback behavior unless a separate backend is configured.
+- The chat UI must remain usable with static retrieval behavior unless a separate backend is configured.
 - Asset paths must respect the repository base path for GitHub Pages repository hosting.
 
 ## RAG Assistant Constraints
 
-The assistant is currently a mock placeholder. Future work should not claim real retrieval, vector search, or model-backed answers until:
+The assistant currently uses deterministic static retrieval over the public site corpus. Future work should not claim vector search or model-backed answers until:
 
 - Content chunking is implemented.
 - Source IDs and citations are stable.
@@ -94,5 +95,5 @@ The site includes a contribution page, but detailed public review workflows are 
 - Knowledge base articles are placeholders, not full articles.
 - Search is local and does not yet index full MDX body content.
 - Versioning is described in the standard but not implemented as versioned routes.
-- RAG assistant architecture is planned but not implemented.
+- Static retrieval is implemented; vector/model-backed RAG is planned but not implemented.
 - Accessibility support is present, but automated accessibility checks are not yet documented.

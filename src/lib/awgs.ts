@@ -475,8 +475,8 @@ export const searchIndex: SearchItem[] = [
     title: "RAG Assistant",
     href: "/assistant",
     category: "Tools",
-    description: "Placeholder chat interface for future retrieval-augmented assistance over vision documents, AWGS, knowledge base articles, glossary, research notes, and future requirements.",
-    keywords: ["chat", "rag", "assistant", "mock", "agentic accessibility", "awgs", "future requirements"]
+    description: "Static retrieval assistant for cited answers over current Agentic Accessibility, AWGS, knowledge base, glossary, research, and future-work content.",
+    keywords: ["chat", "rag", "assistant", "static retrieval", "agentic accessibility", "awgs", "future requirements"]
   },
   {
     title: "Change Log",
@@ -507,37 +507,3 @@ export const searchIndex: SearchItem[] = [
     keywords: ["research", "future work", "governance", "trust", "safety"]
   }
 ];
-
-export function answerFromAwgs(question: string) {
-  const normalized = question.toLowerCase();
-
-  if (normalized.includes("agentic accessibility") || normalized.includes("vision") || normalized.includes("trusted agent")) {
-    return `Agentic Accessibility is ${agenticAccessibilityDefinition} AWGS is the first concrete standard supporting this broader vision.`;
-  }
-
-  if (normalized.includes("compliance") || normalized.includes("level")) {
-    return "AWGS 1.0 defines Level A, Level AA, and Level AAA as maturity targets for agent-ready, interoperable, and governed services. Formal testable conformance criteria are expected in a future AWGS 1.1 Requirements and Success Criteria document.";
-  }
-
-  if (normalized.includes("principle") || normalized.includes("privacy") || normalized.includes("safety")) {
-    return "AWGS is guided by eight core principles: discoverability, interoperability, transparency, accountability, trust, privacy, safety, and human oversight.";
-  }
-
-  if (normalized.includes("domain") || normalized.includes("identity") || normalized.includes("authorization")) {
-    return "AWGS organizes requirements into governance domains covering discoverability, interoperability, identity, authorization, transparency, accountability, trust, privacy, and safety.";
-  }
-
-  if (normalized.includes("assessment") || normalized.includes("evaluate") || normalized.includes("audit")) {
-    return "AWGS assessments may combine automated checks, semi-automated artifact reviews, and manual reviews of governance, incident response, and human oversight procedures.";
-  }
-
-  if (normalized.includes("conformance") || normalized.includes("claim")) {
-    return "AWGS 1.0 provides foundation guidance, principles, domains, and provisional compliance levels. Until AWGS 1.1 requirements exist, Level A, Level AA, and Level AAA should be treated as maturity targets, not independently certified claims.";
-  }
-
-  if (normalized.includes("future") || normalized.includes("roadmap") || normalized.includes("manifest") || normalized.includes("identity profile")) {
-    return "Future work is exploratory and may include an Agent Capability Manifest, Agent Identity Profile, Agent Trust Metadata, Agent Governance Profiles, Agent-to-Agent Governance, and Continuous Compliance Models. These are not finalized requirements.";
-  }
-
-  return "The Agentic Accessibility Initiative promotes open, vendor-neutral principles and standards for trustworthy interaction between autonomous agents and digital services. AWGS is the first standard under that vision. This assistant is currently a mock placeholder and does not perform real retrieval yet.";
-}

@@ -89,7 +89,7 @@ The homepage should include:
 - Compliance comparison for Level A, Level AA, and Level AAA.
 - Governance domain overview.
 - Search entry point.
-- RAG assistant placeholder preview.
+- Static retrieval assistant preview.
 
 Standard pages should:
 
@@ -169,7 +169,7 @@ The project is configured for static export:
 - The GitHub Actions workflow builds the site and publishes `out/` to `gh-pages`.
 - Repository-aware base path handling supports GitHub Pages repository URLs.
 
-GitHub Pages does not execute Next.js API routes. The chat panel therefore falls back to local mock answer logic when `/api/chat` is unavailable on static hosting.
+GitHub Pages does not execute Next.js API routes. The chat panel therefore runs the same static retrieval logic directly in the browser on static hosting.
 
 ## Maintenance Checklist
 

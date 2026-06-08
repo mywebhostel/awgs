@@ -1,27 +1,29 @@
 # RAG Assistant Architecture
 
-Status: Placeholder architecture for future implementation
+Status: Current static retrieval assistant and future implementation notes
 
-The canonical future retrieval architecture is `docs/rag-architecture.md`. This file records implementation-specific notes for the current mock assistant.
+The canonical future vector/model retrieval architecture is `docs/rag-architecture.md`. This file records implementation-specific notes for the current static retrieval assistant.
 
 ## Current State
 
-The initiative assistant is currently a mock interface. It is designed to show the intended user experience without claiming real retrieval or vector search.
+The initiative assistant currently performs deterministic static retrieval over a curated public site corpus. It returns cited answers for Agentic Accessibility, AWGS 1.0, governance domains, compliance levels, conformance, assessment, glossary terms, knowledge base topics, research, and exploratory future work.
+
+It does not perform vector search, model-backed generation, certification assessment, formal conformance evaluation, or legal analysis.
 
 Current files:
 
 - UI component: `src/components/chat/ChatPanel.tsx`
-- Placeholder API route: `src/app/api/chat/route.ts`
-- Mock answer logic: `src/lib/awgs.ts` `answerFromAwgs`
+- Local/server API route: `src/app/api/chat/route.ts`
+- Static retrieval logic: `src/lib/rag.ts` `answerFromAwgs`
 - Assistant page: `src/app/assistant/page.tsx`
 
-The API route returns deterministic answers based on simple question matching. It also returns source objects pointing to `/vision/agentic-accessibility` and `/standards/awgs/full`.
+The browser UI calls `answerFromAwgs` directly so it works on GitHub Pages, where API routes are not executed. The API route returns the same response shape for local and server-capable deployments.
 
-GitHub Pages does not run Next.js API routes. On static hosting, the chat component falls back to the same mock answer logic in the browser if `/api/chat` is unavailable.
+The current response includes answer text, cited source objects, matched topic titles, confidence, and `mode: "static-retrieval"`.
 
-## Non-Goals for the Current Placeholder
+## Non-Goals for the Current Static Assistant
 
-- No real vector search.
+- No vector search.
 - No external model invocation.
 - No claim of exhaustive legal, technical, or compliance assessment.
 - No certification or conformance determination.
@@ -29,7 +31,7 @@ GitHub Pages does not run Next.js API routes. On static hosting, the chat compon
 
 ## Target Architecture
 
-Future retrieval-augmented generation should use the Agentic Accessibility and AWGS content corpus as its source of truth.
+Future vector/model retrieval-augmented generation should use the Agentic Accessibility and AWGS content corpus as its source of truth.
 
 Recommended corpus:
 
@@ -77,7 +79,7 @@ kb:1.0:preparing-agent-ready-service:introduction
 
 ## Response Shape
 
-The current mock response shape can be extended rather than replaced:
+The current static retrieval response shape can be extended rather than replaced:
 
 ```json
 {
@@ -89,7 +91,7 @@ The current mock response shape can be extended rather than replaced:
       "sourceId": "awgs:1.0:section-6"
     }
   ],
-  "mode": "retrieval"
+  "mode": "static-retrieval"
 }
 ```
 
@@ -109,15 +111,15 @@ Future assistant answers should:
 
 Because GitHub Pages is static, a production RAG assistant needs one of the following:
 
-- A separate server or serverless endpoint configured as the chat backend.
 - A static-only search assistant that retrieves from a generated local index without model-backed generation.
+- A separate server or serverless endpoint configured as the chat backend.
 - A hybrid approach where static search works locally and generation is enabled only where a backend is configured.
 
 Any backend should be documented before being connected to the public site.
 
 ## Evaluation
 
-Before enabling real RAG behavior, add checks for:
+Before enabling vector/model-backed RAG behavior, add checks for:
 
 - Retrieval precision on principles, domains, compliance levels, conformance, glossary, and assessment questions.
 - Citation coverage for every answer that references the standard.
@@ -132,5 +134,5 @@ Before enabling real RAG behavior, add checks for:
 3. Define stable source IDs and section anchors.
 4. Generate a local searchable index for static search.
 5. Add retrieval storage for semantic search.
-6. Replace `answerFromAwgs` with a retrieval-backed answer function in server-capable deployments.
-7. Keep the static fallback for GitHub Pages unless a deployed backend URL is configured.
+6. Replace or augment the static retrieval path with vector retrieval in server-capable deployments.
+7. Keep static retrieval available for GitHub Pages unless a deployed backend URL is configured.

@@ -184,11 +184,11 @@ export default function HomePage() {
         <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:px-8">
           <div>
             <Badge tone="blue">Knowledge Access</Badge>
-            <h2 className="mt-4 text-3xl font-semibold tracking-normal text-ink">RAG assistant placeholder</h2>
+            <h2 className="mt-4 text-3xl font-semibold tracking-normal text-ink">Static retrieval assistant</h2>
             <p className="mt-3 text-slate-600">
-              The assistant interface is prepared for future retrieval over Agentic Accessibility vision documents, AWGS
-              standard documents, knowledge base articles, glossary terms, research notes, and future requirements. It
-              remains mocked for now.
+              The assistant retrieves cited answers from current Agentic Accessibility vision, AWGS standard, glossary,
+              knowledge base, research, and future-work content. Vector search and model-backed generation remain future
+              implementation work.
             </p>
           </div>
           <ChatPanel />

@@ -4,6 +4,15 @@ This log records website implementation, repository, hosting, and tooling change
 
 ## 2026-06-08
 
+### Static Retrieval Assistant
+
+- Replaced the public assistant's mock response behavior with deterministic static retrieval over the current Agentic Accessibility and AWGS site corpus.
+- Added cited source links for assistant answers.
+- Added suggested-question controls for common AWGS topics.
+- Kept the assistant compatible with GitHub Pages by running retrieval logic in the browser.
+- Updated the local/server `/api/chat` route to return the same static retrieval response shape.
+- Clarified that vector search, model-backed generation, certification assessment, and legal analysis remain outside the current implementation.
+
 ### Repository Maintenance Rules
 
 - Added persistent agent-maintenance rules for future coding and documentation agents.

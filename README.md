@@ -8,7 +8,7 @@ Modern documentation website for the Agentic Accessibility Initiative, with the 
 - TypeScript
 - Tailwind CSS
 - MDX content support through `@next/mdx`
-- Mock RAG chat UI and `/api/chat` placeholder route
+- Static retrieval assistant and `/api/chat` route for local/server deployments
 
 ## Project Structure
 
@@ -86,7 +86,7 @@ For a user or organization Pages repository named `YOUR-USERNAME.github.io`, the
 https://YOUR-USERNAME.github.io/
 ```
 
-GitHub Pages does not run Next.js API routes. The `/api/chat` route remains available for local/server deployments, while the browser chat component falls back to the same mock AWGS answer logic when deployed as a static GitHub Pages site.
+GitHub Pages does not run Next.js API routes. The browser chat component therefore uses the same static retrieval logic directly in the client, while `/api/chat` remains available for local/server deployments.
 
 ## Content
 
@@ -105,8 +105,8 @@ Repository-level documentation lives in `docs/`:
 - `docs/website-spec.md` - canonical website information architecture, content hierarchy, knowledge base structure, search expectations, accessibility notes, and deployment constraints.
 - `docs/website-specification.md` - historical AWGS-only website specification retained for context.
 - `docs/project-context.md` - maintainer and future-agent instructions for preserving vendor neutrality and the canonical content hierarchy.
-- `docs/rag-architecture.md` - canonical future retrieval architecture.
-- `docs/rag-assistant-architecture.md` - current mock assistant behavior and future retrieval architecture.
+- `docs/rag-architecture.md` - canonical future vector/model retrieval architecture.
+- `docs/rag-assistant-architecture.md` - current static retrieval assistant behavior and future retrieval architecture.
 - `docs/decision-log.md` - observed and intentional project decisions.
 - `AGENTS.md` - instructions for future coding agents.
 
@@ -116,17 +116,24 @@ Public publication records live in `content/public/` and are rendered on the sit
 - `content/public/version-log.mdx` - AWGS standard and guidelines version log rendered at `/versions`.
 - `content/public/website-log.mdx` - website technical log rendered at `/website-log`.
 
-## Future RAG Implementation
+## Assistant and Future RAG Implementation
 
-The chat UI is implemented in `src/components/chat/ChatPanel.tsx`. The placeholder endpoint is `src/app/api/chat/route.ts`.
+The chat UI is implemented in `src/components/chat/ChatPanel.tsx`. The static retrieval corpus and ranking logic are in `src/lib/rag.ts`. The `/api/chat` route returns the same response shape for local/server deployments.
+
+Current behavior:
+
+- Static retrieval over current Agentic Accessibility, AWGS, glossary, knowledge base, research, and future-work site data.
+- Cited source links returned with each assistant answer.
+- GitHub Pages-compatible client-side operation.
+- No vector search, model-backed generation, certification assessment, or legal analysis.
 
 To implement retrieval-augmented generation later:
 
 1. Split AWGS MDX and knowledge base articles into chunks with stable source IDs.
 2. Generate embeddings for each chunk.
 3. Store embeddings and source metadata in a vector store.
-4. Replace `answerFromAwgs` with retrieval against the vector store.
+4. Replace or augment `src/lib/rag.ts` retrieval with vector retrieval.
 5. Pass retrieved excerpts and citations to the answer-generation model.
 6. Return source references in the existing `sources` response field.
 
-The current route intentionally returns deterministic mock answers and does not perform real vector search.
+The current assistant intentionally uses deterministic static retrieval and does not perform real vector search.

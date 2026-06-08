@@ -1,8 +1,10 @@
 # RAG Architecture
 
-Status: Canonical future retrieval architecture
+Status: Canonical future vector/model retrieval architecture
 
-The current assistant is a mock placeholder. It does not perform real vector search, model-backed retrieval, certification assessment, or formal conformance evaluation.
+The current assistant performs deterministic static retrieval over the public site corpus. It does not perform vector search, model-backed generation, certification assessment, or formal conformance evaluation.
+
+See `docs/rag-assistant-architecture.md` for current implementation-specific assistant notes.
 
 ## Future Corpus
 
@@ -16,6 +18,8 @@ Future retrieval should cover:
 - Future AWGS requirements and success criteria
 
 ## Pipeline
+
+The current static assistant uses a curated local corpus and lexical scoring. Future retrieval-augmented generation should move toward:
 
 ```text
 Markdown / MDX content
@@ -34,5 +38,3 @@ Markdown / MDX content
 - Do not invent conformance requirements.
 - Do not claim certification or independent verification.
 - Preserve vendor neutrality.
-
-See `docs/rag-assistant-architecture.md` for the current implementation-specific assistant notes.

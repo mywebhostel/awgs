@@ -31,7 +31,7 @@ This is a living steward document. Update it through `docs/agent-rules/maintenan
 - Glossary presentation.
 - Research pages.
 - Search behavior.
-- Mock RAG assistant UI.
+- Static retrieval assistant UI.
 - GitHub Pages deployment.
 - MDX rendering.
 - Content organization.
@@ -150,18 +150,19 @@ Avoid:
 - Exaggerated claims.
 - Certification badges before a certification program exists.
 
-### 8. Keep RAG Assistant Mocked Unless Explicitly Requested
+### 8. Keep Assistant Behavior Static-Compatible Unless Explicitly Requested
 
-The assistant may remain a placeholder.
+The assistant may use deterministic static retrieval over the public site corpus.
 
 Allowed:
 
 - UI shell.
-- Mock answers.
+- Static retrieval answers with cited site sources.
+- Local/server API route that returns the same static retrieval response shape.
 - Explanation of future retrieval pipeline.
 - Prepared architecture documentation.
 
-Do not implement real vector search unless explicitly requested.
+Do not implement vector search, model-backed generation, or external backend dependencies unless explicitly requested.
 
 Future RAG pipeline may be documented as:
 

@@ -91,7 +91,7 @@ Required homepage sections:
 - Core initiative principles
 - Future work
 - Search / knowledge access
-- RAG assistant placeholder
+- Static retrieval assistant
 
 ## Content Source Rules
 
@@ -132,7 +132,7 @@ The knowledge base should prepare categories for:
 
 ## RAG Assistant
 
-The current assistant is a mock placeholder. It may answer deterministic questions about:
+The current assistant performs deterministic static retrieval over the public site corpus. It may answer cited questions about:
 
 - Agentic Accessibility
 - Manifesto
@@ -144,13 +144,20 @@ The current assistant is a mock placeholder. It may answer deterministic questio
 - Future work
 - Exploratory future requirements planning
 
-Future RAG pipeline:
+Current limits:
+
+- No vector search.
+- No model-backed generation.
+- No certification assessment.
+- No legal analysis.
+
+Future vector/model RAG pipeline:
 
 ```text
 Markdown/MDX content -> chunking -> embeddings -> vector store -> retrieval -> cited answers
 ```
 
-Do not claim real vector search exists until implemented and deployed.
+Do not claim vector search or model-backed generation exists until implemented and deployed.
 
 ## Design Requirements
 

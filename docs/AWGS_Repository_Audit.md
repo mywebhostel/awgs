@@ -16,7 +16,7 @@ This table reflects the repository state observed before the new documentation f
 | Website Specification | Yes | `README.md`, route structure under `src/app/`, reusable components under `src/components/`, and navigation in `src/lib/navigation.ts` | Partial | Create New |
 | Project Context / Agent Instructions | Yes | `README.md` gives stack, run, deployment, content, and future RAG notes; no repository-level contributor or future-agent instruction document found | Partial | Create New |
 | Knowledge Base Structure | Yes | `src/lib/awgs.ts` `knowledgeBaseArticles`; `src/app/knowledge-base/page.tsx`; `src/app/knowledge-base/[slug]/page.tsx`; README project structure | Partial | Consolidate |
-| RAG Assistant Architecture | Yes | `README.md` Future RAG Implementation; `src/components/chat/ChatPanel.tsx`; `src/app/api/chat/route.ts`; `src/lib/awgs.ts` `answerFromAwgs` | Partial | Expand |
+| RAG Assistant Architecture | Yes | `README.md` Assistant and Future RAG Implementation; `docs/rag-assistant-architecture.md`; `src/components/chat/ChatPanel.tsx`; `src/app/api/chat/route.ts`; `src/lib/rag.ts` `answerFromAwgs` | Partial | Expand |
 | Compliance Level Definitions | Yes | `content/standard/awgs-1-0-foundation.mdx` section 6; `src/lib/awgs.ts` `complianceLevels`; `src/app/standard/compliance-levels/page.tsx` | Complete | Consolidate |
 | Governance Domain Definitions | Yes | `content/standard/awgs-1-0-foundation.mdx` section 5; `src/lib/awgs.ts` `domains`; `src/app/standard/governance-domains/page.tsx` | Complete | Consolidate |
 | Glossary | Yes | `content/standard/awgs-1-0-foundation.mdx` section 12; `src/lib/awgs.ts` `glossary`; `src/app/standard/glossary/page.tsx` | Complete | Consolidate |
@@ -29,7 +29,8 @@ The recommended documentation hierarchy is:
 |------|--------------------|-------|
 | Normative AWGS 1.0 Foundation Specification | `content/standard/awgs-1-0-foundation.mdx` | This should remain the source for compliance, conformance, governance domains, principles, assessment, glossary, and roadmap language. |
 | Rendered full standard | `src/app/standards/awgs/full/page.tsx`; compatibility route `src/app/standard/full/page.tsx` | Imports and renders the canonical MDX source. |
-| Structured website data | `src/lib/awgs.ts` | Current source for cards, search entries, planned KB article metadata, and mock chat responses. Treat as presentation/index data, not independent normative content. |
+| Structured website data | `src/lib/awgs.ts` | Current source for cards, search entries, and planned KB article metadata. Treat as presentation/index data, not independent normative content. |
+| Static retrieval assistant | `src/lib/rag.ts` | Current source for the GitHub Pages-compatible assistant corpus, ranking, cited source output, and deterministic answer formatting. Treat as implementation support, not independent normative content. |
 | Website information architecture | `docs/website-specification.md` | Canonical repository document for site pages, route responsibilities, content hierarchy, search, knowledge base structure, accessibility, and deployment constraints. |
 | Project context and future-agent instructions | `docs/project-context.md` | Canonical contributor and future-agent guidance for preserving vendor neutrality, source hierarchy, and static hosting constraints. |
 | Decision history | `docs/decision-log.md` | Canonical record for implementation and documentation decisions. |
@@ -170,7 +171,7 @@ The following are not gaps:
 - Glossary.
 - Standard overview, principles, conformance, assessment model, and future roadmap pages.
 - Search UI.
-- RAG chat placeholder UI and mock endpoint.
+- Static retrieval assistant UI and local/server API route.
 
 ## Documentation Created
 
